@@ -1,6 +1,6 @@
 ![Rin](https://images6.alphacoders.com/652/652708.jpg)
 
-# Aqua
+# Rin Tohsaka
 A modular telegram Python bot running on python3 with an sqlalchemy database.
 
 Originally a Marie fork, Rin was created for personal use by [this person](https://t.me/TheRealPhoenix). Feel free to add it to your groups though!
