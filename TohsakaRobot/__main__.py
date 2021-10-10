@@ -38,7 +38,7 @@ from TohsakaRobot.modules.helper_funcs.chat_status import is_user_admin
 from TohsakaRobot.modules.helper_funcs.misc import paginate_modules
 
 PM_START_TEXT = """
-Hi {}, my name is {}!
+Hi {}, my name is [{}](https://telegra.ph/file/cb9ee39a95f0653f99e67.jpg)!
 I'm a group management bot with a few fun extras ;)
 
 The support chat is at @Aqua_Support
@@ -159,9 +159,8 @@ def start(bot: Bot, update: Update, args: List[str]):
 
         else:
             first_name = update.effective_user.first_name
-            update.effective_message.reply_photo(
-                RIN_IMG,
-                caption=PM_START_TEXT.format(
+            update.effective_message.reply_text(
+                PM_START_TEXT.format(
                     escape_markdown(first_name),
                     escape_markdown(bot.first_name),
                     OWNER_ID,
