@@ -39,6 +39,7 @@ class Config(object):
         []
     )  # List of id's (not usernames) for users which WONT be banned/kicked by the bot.
     DONATION_LINK = None  # EG, paypal
+    DEV_USERS = get_user_list("elevated_users.json", "devs")
     CERT_PATH = None
     PORT = 5000
     DEL_CMDS = False  # Whether or not you should delete "blue text must click" commands
