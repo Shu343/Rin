@@ -48,6 +48,7 @@ class Config(object):
     ALLOW_EXCL = False  # Allow ! commands as well as /
     LASTFM_API_KEY = ''
     WALL_API = ''
+    MOE_API = ''
 
 class Production(Config):
     LOGGER = False
