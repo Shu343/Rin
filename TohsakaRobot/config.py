@@ -49,6 +49,7 @@ class Config(object):
     LASTFM_API_KEY = ''
     WALL_API = ''
     MOE_API = ''
+    AI_API_KEY = ''
 
 class Production(Config):
     LOGGER = False
