@@ -102,9 +102,9 @@ else:
         raise Exception("Your whitelisted users list does not contain valid integers.")
 
     try:
-        DEV_USERS = set(int(x) for x in Config.DEV_USERS or [])
+        DEV_USERS = set(int(x) for x in os.environ.get("DEV_USERS", "").split())
     except ValueError:
-        raise Exception("Your developer users list does not contain valid integers.")
+        raise Exception("Your DEV users list does not contain valid integers.")
 
     WEBHOOK = Config.WEBHOOK
     URL = Config.URL
