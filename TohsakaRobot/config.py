@@ -14,8 +14,8 @@ class Config(object):
     LOGGER = True
 
     # REQUIRED
-    API_KEY = "3395247"
-    OWNER_ID = "c0c4adf40b0b3f76b07ffe613ce6ca8d"  # If you dont know, run the bot and do /id in your private chat with it
+    API_KEY = '2060272671:AAEOtO1M1AwhPFdPhwowJxqkKmOJBliixbI'
+    OWNER_ID = "1725431624"  # If you dont know, run the bot and do /id in your private chat with it
     OWNER_USERNAME = "Its_shu3"
 
     # RECOMMENDED
@@ -42,7 +42,6 @@ class Config(object):
     CERT_PATH = None
     PORT = 5000
     DEL_CMDS = False  # Whether or not you should delete "blue text must click" commands
-    TOKEN = '2060272671:AAEOtO1M1AwhPFdPhwowJxqkKmOJBliixbI'
     STRICT_GBAN = False
     WORKERS = 8  # Number of subthreads to use. This is the recommended amount - see for yourself what works best!
     BAN_STICKER = "CAADAgADOwADPPEcAXkko5EB3YGYAg"  # banhammer marie sticker
