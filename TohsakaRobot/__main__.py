@@ -63,8 +63,7 @@ I'm a modular group management bot with a few fun extras!
 And the following:
 """.format(
     dispatcher.bot.first_name,
-    "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n",
-)
+    "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
 
 RIN_IMG = "https://telegra.ph/file/dd29ca0a1e9ca63c6c382.jpg"
 
