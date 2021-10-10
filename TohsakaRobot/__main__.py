@@ -41,7 +41,7 @@ PM_START_TEXT = """
 Hi {}, my name is {}!
 I'm a group management bot with a few fun extras ;)
 
-The support chat is at @tohsakas
+The support chat is at @Aqua_Support
 
 My repository: [Rin](https://github.com/EagleUnion/Rin)
 
@@ -66,7 +66,7 @@ And the following:
     "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n",
 )
 
-RIN_IMG = "https://telegra.ph/file/2dc1c31660b79b7e3ce90.jpg"
+RIN_IMG = "https://telegra.ph/file/dd29ca0a1e9ca63c6c382.jpg"
 
 DONATE_STRING = """I'm free for everyone uwu""".format(dispatcher.bot.first_name)
 
