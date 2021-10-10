@@ -1,4 +1,4 @@
-if not __name__.endswith("sample_config"):
+if not __name__.endswith("config"):
     import sys
 
     print(
