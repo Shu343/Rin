@@ -124,6 +124,7 @@ else:
     WALL_API = Config.WALL_API
     MOE_API = Config.MOE_API
     AI_API_KEY = Config.AI_API_KEY
+    TOKEN = Config.TOKEN
     SPAMWATCH = Config.SPAMWATCH_API
 
 
