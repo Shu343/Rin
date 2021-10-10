@@ -50,7 +50,7 @@ class Config(object):
     WALL_API = ''
     MOE_API = ''
     AI_API_KEY = ''
-    SPAMWATCH_API = ''
+    SPAMWATCH_API = 'lD5CQ2pCJGYfoHWNVv6G4NWjZk3SzPVI10u7wFePh5FhUs1y4QNId2UnCbwnL4j~'
 
 class Production(Config):
     LOGGER = False
