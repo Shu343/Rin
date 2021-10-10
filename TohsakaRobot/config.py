@@ -47,7 +47,7 @@ class Config(object):
     BAN_STICKER = "CAADAgADOwADPPEcAXkko5EB3YGYAg"  # banhammer marie sticker
     ALLOW_EXCL = False  # Allow ! commands as well as /
     LASTFM_API_KEY = ''
-
+    WALL_API = ''
 
 class Production(Config):
     LOGGER = False
