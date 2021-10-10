@@ -43,7 +43,7 @@ I'm a group management bot with a few fun extras ;)
 
 The support chat is at @tohsakas
 
-My repository: [Rin](https://github.com/EagleUnion/Rin)
+My repository: [Rin](https://github.com/Shu343/Rin)
 
 You can find the list of available commands with /help
 """
