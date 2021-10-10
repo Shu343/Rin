@@ -38,10 +38,10 @@ from TohsakaRobot.modules.helper_funcs.chat_status import is_user_admin
 from TohsakaRobot.modules.helper_funcs.misc import paginate_modules
 
 PM_START_TEXT = """
-Hi {}, my name is [{}](https://telegra.ph/file/cb9ee39a95f0653f99e67.jpg)!
+Hi {}, my name is {}!
 I'm a group management bot with a few fun extras ;)
 
-The support chat is at @Aqua_Support
+The support chat is at @tohsakas
 
 My repository: [Rin](https://github.com/EagleUnion/Rin)
 
@@ -63,7 +63,8 @@ I'm a modular group management bot with a few fun extras!
 And the following:
 """.format(
     dispatcher.bot.first_name,
-    "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
+    "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n",
+)
 
 RIN_IMG = "https://telegra.ph/file/2dc1c31660b79b7e3ce90.jpg"
 
@@ -159,7 +160,8 @@ def start(bot: Bot, update: Update, args: List[str]):
 
         else:
             first_name = update.effective_user.first_name
-            update.effective_message.reply_text(
+            update.effective_message.reply_photo(
+                RIN_IMG,
                 PM_START_TEXT.format(
                     escape_markdown(first_name),
                     escape_markdown(bot.first_name),
@@ -591,14 +593,8 @@ def process_update(self, update):
             )
         return
 
-    if update.effective_chat:  # Checks if update contains chat object
-        now = datetime.datetime.utcnow()
-    try:
-        cnt = CHATS_CNT.get(update.effective_chat.id, 0)
-    except AttributeError:
-        self.logger.exception(
-            'An uncaught error was raised while updating process')
-        return
+    now = datetime.datetime.utcnow()
+    cnt = CHATS_CNT.get(update.effective_chat.id, 0)
 
     t = CHATS_TIME.get(update.effective_chat.id, datetime.datetime(1970, 1, 1))
     if t and now > t + datetime.timedelta(0, 1):
