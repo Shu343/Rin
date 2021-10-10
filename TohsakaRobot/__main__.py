@@ -65,7 +65,7 @@ And the following:
     dispatcher.bot.first_name,
     "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
 
-RIN_IMG = "https://telegra.ph/file/dd29ca0a1e9ca63c6c382.jpg"
+RIN_IMG = "https://telegra.ph/file/2dc1c31660b79b7e3ce90.jpg"
 
 DONATE_STRING = """I'm free for everyone uwu""".format(dispatcher.bot.first_name)
 
