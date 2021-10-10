@@ -1,4 +1,4 @@
-![Rin](https://telegra.ph/file/dd29ca0a1e9ca63c6c382.jpg)
+![Rin](https://images6.alphacoders.com/652/652708.jpg)
 
 # Aqua
 A modular telegram Python bot running on python3 with an sqlalchemy database.
