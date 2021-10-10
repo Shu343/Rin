@@ -65,11 +65,11 @@ RUN apt update && apt upgrade -y && \
 RUN pip3 install --upgrade pip setuptools
 
 # Copy Python Requirements to /root/Rin
-RUN git clone https://github.com/EagleUnion/Rin /root/Rin
+RUN git clone https://github.com/343/Rin /root/Rin
 WORKDIR /root/Rin
 
 #Copy config file to /root/Rin/TohsakaRobot
-COPY ./TohsakaRobot/sample_config.py ./TohsakaRobot/config.py* /root/Rin/TohsakaRobot/
+COPY ./TohsakaRobot/config.py ./TohsakaRobot/config.py* /root/Rin/TohsakaRobot/
 
 ENV PATH="/home/bot/bin:$PATH"
 
