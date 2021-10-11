@@ -482,7 +482,7 @@ def get_settings(bot: Bot, update: Update):
 @run_async
 def start_back(update, context):
     query = update.callback_query
-     query.data == "start_back":
+    if query.data == "start_back":
         query.message.edit_text(
                 PM_START_TEXT,
                 reply_markup=InlineKeyboardMarkup(buttons),
