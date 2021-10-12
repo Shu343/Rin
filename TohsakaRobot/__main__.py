@@ -43,7 +43,7 @@ I'm a group management bot with a few fun extras ;)
 
 The support chat is at @tohsakas
 
-My repository: <A HREF="https://github.com/Shu343/Rin/">Rin</A>
+My repository: <A HREF="http://github.com/Shu343/Rin/">Rin</A>
 
 You can find the list of available commands with /help
 """
