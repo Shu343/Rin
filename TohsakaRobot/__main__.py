@@ -43,13 +43,13 @@ I'm a group management bot with a few fun extras ;)
 
 The support chat is at @tohsakas
 
-My repository: <A HREF="http://github.com/Shu343/Rin/">Rin</A>
+My repository: <a href="http://github.com/Shu343/Rin/">Rin</A>
 
 You can find the list of available commands with /help
 """
 
 HELP_STRINGS = """
-<B><U>All Helpable commands are here</U></B>
+<b><u>All Helpable commands are here</u></b>
 """
 
 RIN_IMG = "https://telegra.ph/file/2dc1c31660b79b7e3ce90.jpg"
