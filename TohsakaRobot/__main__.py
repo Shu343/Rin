@@ -179,7 +179,7 @@ def start(bot: Bot, update: Update, args: List[str]):
                     escape_markdown(bot.first_name),
                     OWNER_ID,
                 ),
-                parse_mode=ParseMode.MARKDOWN,
+                parse_mode=ParseMode.HTML,
                 reply_markup=InlineKeyboardMarkup(buttons),
                 ),
     else:
