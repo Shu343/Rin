@@ -39,7 +39,7 @@ from TohsakaRobot.modules.helper_funcs.misc import paginate_modules
 
 PM_START_TEXT = """
 Hi {}, my name is {}!
-I'm a group management bot with a few fun extras ;)
+<H4 ALIGN = LEFT>I'm a group management bot with a few fun extras ;)</H4>
 
 The support chat is at @tohsakas
 
