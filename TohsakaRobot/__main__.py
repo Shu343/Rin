@@ -68,6 +68,18 @@ And the following:
 
 RIN_IMG = "https://telegra.ph/file/2dc1c31660b79b7e3ce90.jpg"
 
+buttons = [
+    [
+        InlineKeyboardButton(
+        text="Add Rin to your group", url="t.me/RinTohsaka_Rbot?startgroup=true"
+        ),
+        InlineKeyboardButton(
+        text="Help📕", callback_data="help_back"
+        ),
+    ]
+    
+]
+
 DONATE_STRING = """I'm free for everyone uwu""".format(dispatcher.bot.first_name)
 
 IMPORTED = {}
