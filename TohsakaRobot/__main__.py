@@ -71,10 +71,10 @@ RIN_IMG = "https://telegra.ph/file/2dc1c31660b79b7e3ce90.jpg"
 buttons = [
     [
         InlineKeyboardButton(
-        text="Add Rin to your group", url="t.me/RinTohsaka_Rbot?startgroup=true"
+        text="Add Rin", url="t.me/RinTohsaka_Rbot?startgroup=true"
         ),
         InlineKeyboardButton(
-        text="Help📕", callback_data="help_back"
+        text="Help", callback_data="help_back"
         ),
     ]
     
