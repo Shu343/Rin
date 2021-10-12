@@ -168,24 +168,8 @@ def start(bot: Bot, update: Update, args: List[str]):
                     OWNER_ID,
                 ),
                 parse_mode=ParseMode.MARKDOWN,
-                reply_markup=InlineKeyboardMarkup(
-                    [
-                        [
-                            InlineKeyboardButton(
-                                text="Add Rin to your group",
-                                url="t.me/{}?startgroup=true".format(bot.username),
-                    ],
-                        ],
-                    [   
-                        [
-                        
-                            InlineKeyboardButton(
-                                text="Help📕", callback_data="help_back"),
-                            )
-                        ]
-                    ]
+                reply_markup=InlineKeyboardMarkup(buttons),
                 ),
-            )
     else:
         update.effective_message.reply_text("Yo, why'd you summon me?")
 
