@@ -49,7 +49,7 @@ You can find the list of available commands with /help
 """
 
 HELP_STRINGS = """
-<B>All Helpable commands are here</B>
+</B>All Helpable commands are here</B>
 """
 
 RIN_IMG = "https://telegra.ph/file/2dc1c31660b79b7e3ce90.jpg"
