@@ -50,7 +50,7 @@ You can find the list of available commands with /help
 
 HELP_STRINGS = """
 <b><u>All Helpable commands are here</u></b>
-"""parse_mode=ParseMode.HTML,
+"""parse_mode=ParseMode.HTML,)
 
 RIN_IMG = "https://telegra.ph/file/2dc1c31660b79b7e3ce90.jpg"
 
