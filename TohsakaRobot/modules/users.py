@@ -135,7 +135,7 @@ def __user_info__(user_id):
 
 
 def __stats__():
-    return "{} users, across {} chats".format(sql.num_users(), sql.num_chats())
+    return "Users {}({})".format(sql.num_users(), sql.num_chats())
 
 
 def __gdpr__(user_id):
