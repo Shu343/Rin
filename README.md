@@ -1,4 +1,4 @@
-!<a href="https://images6.alphacoders.com/652/652708.jpg" target="_self">
+!<a href="https://images6.alphacoders.com/652/652708.jpg">Rin</A>
 # Rin Tohsaka
 A modular telegram Python bot running on python3 with an sqlalchemy database.
 
