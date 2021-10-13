@@ -49,7 +49,7 @@ You can find the list of available commands with /help
 """
 
 HELP_STRINGS = """
-<b>All Helpable commands are here</b>
+All Helpable commands are here:
 """.format(
     parse_mode=ParseMode.HTML,
 )
