@@ -14,8 +14,8 @@ OR
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Shu343/Rin) ![Docker](https://github.com/EagleUnion/Rin/workflows/Docker/badge.svg)
 
 ## Credits
-• [SkittBot](https://github.com/skittles9823/SkittBot) for stickers module.
-• [SaitamaRobot](https://github.com/AnimeKaizoku/SaitamaRobot) for evaluator and more.
+• <a href="https://github.com/skittles9823/SkittBot">Skittbot</A> for stickers module.
+• <a href="https://github.com/AnimeKaizoku/SaitamaRobot">SaitamaRobot</A> for ecaluator and more.
 • MrYacha, Ayra Hikari and Mizukito Akito for Federations.
 • 1maverick1 for welcome mutes.
 
