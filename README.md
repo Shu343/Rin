@@ -14,10 +14,10 @@ OR
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Shu343/Rin) ![Docker](https://github.com/EagleUnion/Rin/workflows/Docker/badge.svg)
 
 ## Credits
-• <a href="https://github.com/skittles9823/SkittBot">Skittbot</A> for stickers module.
-• <a href="https://github.com/AnimeKaizoku/SaitamaRobot">SaitamaRobot</A> for ecaluator and more.
-• MrYacha, Ayra Hikari and Mizukito Akito for Federations.
-• 1maverick1 for welcome mutes.
+• <a href="https://github.com/skittles9823/SkittBot">Skittbot</A> for stickers module.<BR>
+• <a href="https://github.com/AnimeKaizoku/SaitamaRobot">SaitamaRobot</A> for ecaluator and more.<BR>
+• MrYacha, Ayra Hikari and Mizukito Akito for Federations.<BR>
+• 1maverick1 for welcome mutes.<BR>
 
 For the link to the old repo containing all the commit history and authorships, <a href="https://github.com/rsktg/Phoenix.git">Click Here</A>
 
