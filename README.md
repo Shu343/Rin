@@ -1,4 +1,4 @@
-!<IMG SRC = "https://images6.alphacoders.com/652/652708.jpg" ALT ="Rin">
+<IMG SRC = "https://images6.alphacoders.com/652/652708.jpg" ALT ="Rin">
 # Rin Tohsaka
 A modular telegram Python bot running on python3 with an sqlalchemy database.
 
