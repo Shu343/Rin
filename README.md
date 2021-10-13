@@ -21,6 +21,6 @@ OR
 
 For the link to the old repo containing all the commit history and authorships, <a href="https://github.com/rsktg/Phoenix.git">Click Here</A>
 
-<img src="c:\program files\microsoft office\clipart\pubg60cor\RinTohsaka.GIF" WIDTH ="150" HEIGHT="100" aligh="right" alt="image of tohsaka">
+<img src="c:\program files\microsoft office\clipart\pubg60cor\RinTohsaka.GIF" WIDTH ="150" HEIGHT="100" aligh="right" alt="image of Rintohsaka">
 <H2 ALGIN =LEFT>Notice</H2><BR>
 new features will be added to this project anymore, however occasional bug fixes will be released.
