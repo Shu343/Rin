@@ -13,7 +13,7 @@ OR
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Shu343/Rin) ![Docker](https://github.com/EagleUnion/Rin/workflows/Docker/badge.svg)
 
-## Credits
+<H2 ALIGN =LEFT>Credits</H2><BR>
 • <a href="https://github.com/skittles9823/SkittBot">Skittbot</A> for stickers module.<BR>
 • <a href="https://github.com/AnimeKaizoku/SaitamaRobot">SaitamaRobot</A> for ecaluator and more.<BR>
 • MrYacha, Ayra Hikari and Mizukito Akito for Federations.<BR>
@@ -21,5 +21,5 @@ OR
 
 For the link to the old repo containing all the commit history and authorships, <a href="https://github.com/rsktg/Phoenix.git">Click Here</A>
 
-## Notice
+<H2 ALGIN =LEFT>Notice</H2><BR>
 No new features will be added to this project anymore, however occasional bug fixes will be released.
