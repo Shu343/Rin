@@ -21,6 +21,6 @@ OR
 
 For the link to the old repo containing all the commit history and authorships, <a href="https://github.com/rsktg/Phoenix.git">Click Here</A>
 
-<IMGSRC="D:\Rin.GIF" WIDTH ="150" HEIGHT="100" BORDER=0>
+<IMG SRC="D:\Rin.GIF" WIDTH ="150" HEIGHT="100" BORDER=0>
 <H2 ALGIN =LEFT>Notice</H2><BR>
 new features will be added to this project anymore, however occasional bug fixes will be released.
