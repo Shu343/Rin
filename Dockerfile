@@ -65,7 +65,7 @@ RUN apt update && apt upgrade -y && \
 RUN pip3 install --upgrade pip setuptools
 
 # Copy Python Requirements to /root/Rin
-RUN git clone https://github.com/343/Rin /root/Rin
+RUN git clone https://github.com/Shu343/Rin /root/Rin
 WORKDIR /root/Rin
 
 #Copy config file to /root/Rin/TohsakaRobot
