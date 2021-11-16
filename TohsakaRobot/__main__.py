@@ -39,11 +39,11 @@ from TohsakaRobot.modules.helper_funcs.misc import paginate_modules
 
 PM_START_TEXT = """
 Hi {}, my name is {}!
-I'm a group management bot with a few fun extras ;)
+I'm a group management bot with a few fun extras
 
-The support chat is at @tohsakas
+The support chat is Not now
 
-My repository: <a href="http://github.com/Shu343/Rin/">Rin</A>
+My repository: <a href="http://github.com/Shu343/Rougi/">Rin</A>
 
 You can find the list of available commands with /help
 """
@@ -54,7 +54,7 @@ HELP_STRINGS = """
     parse_mode=ParseMode.HTML,
 )
 
-RIN_IMG = "https://telegra.ph/file/2dc1c31660b79b7e3ce90.jpg"
+RIN_IMG = "https://wall.alphacoders.com/by_sub_gallery.php?id=6139"
 
 buttons = [
     [
