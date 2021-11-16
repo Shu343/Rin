@@ -54,7 +54,7 @@ HELP_STRINGS = """
     parse_mode=ParseMode.HTML,
 )
 
-RIN_IMG = "https://wall.alphacoders.com/by_sub_gallery.php?id=6139"
+RIN_IMG = "https://telegra.ph/file/d551b6a03367e1e704df6.jpg"
 
 buttons = [
     [
