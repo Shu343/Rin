@@ -5,9 +5,9 @@ from telegram import ParseMode, Update, Bot, Chat, User
 from telegram.ext import CommandHandler, RegexHandler, Filters
 from telegram.utils.helpers import escape_markdown
 
-from TohsakaRobot import dispatcher
-from TohsakaRobot.modules.helper_funcs.handlers import CMD_STARTERS
-from TohsakaRobot.modules.helper_funcs.misc import is_module_loaded
+from src import dispatcher
+from src.modules.helper_funcs.handlers import CMD_STARTERS
+from src.modules.helper_funcs.misc import is_module_loaded
 
 FILENAME = __name__.rsplit(".", 1)[-1]
 
@@ -16,7 +16,7 @@ if is_module_loaded(FILENAME):
     from TohsakaRobot.modules.helper_funcs.chat_status import user_admin, is_user_admin
     from telegram.ext.dispatcher import run_async
 
-    from TohsakaRobot.modules.sql import disable_sql as sql
+    from src.modules.sql import disable_sql as sql
 
     DISABLE_CMDS = []
     DISABLE_OTHER = []
