@@ -10,8 +10,8 @@ from wikipedia.exceptions import DisambiguationError, PageError
 from telegram import Message, Chat, Update, Bot, ParseMode
 from telegram.ext import run_async
 
-from TohsakaRobot import dispatcher
-from TohsakaRobot.modules.disable import DisableAbleCommandHandler
+from src import dispatcher
+from src.modules.disable import DisableAbleCommandHandler
 
 SHRUGS = (
     "┐(´д｀)┌",
