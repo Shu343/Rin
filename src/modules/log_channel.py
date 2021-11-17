@@ -1,7 +1,7 @@
 from functools import wraps
 from typing import Optional
 
-from TohsakaRobot.modules.helper_funcs.misc import is_module_loaded
+from src.modules.helper_funcs.misc import is_module_loaded
 
 FILENAME = __name__.rsplit(".", 1)[-1]
 
@@ -11,9 +11,9 @@ if is_module_loaded(FILENAME):
     from telegram.ext import CommandHandler, run_async
     from telegram.utils.helpers import escape_markdown
 
-    from TohsakaRobot import dispatcher, LOGGER
-    from TohsakaRobot.modules.helper_funcs.chat_status import user_admin
-    from TohsakaRobot.modules.sql import log_channel_sql as sql
+    from src import dispatcher, LOGGER
+    from src.modules.helper_funcs.chat_status import user_admin
+    from src.modules.sql import log_channel_sql as sql
 
     def loggable(func):
         @wraps(func)
