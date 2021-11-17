@@ -7,19 +7,19 @@ from telegram.ext import CommandHandler, Filters
 from telegram.ext.dispatcher import run_async
 from telegram.utils.helpers import mention_html
 
-from TohsakaRobot import dispatcher, LOGGER
-from TohsakaRobot.modules.helper_funcs.chat_status import (
+from src import dispatcher, LOGGER
+from src.modules.helper_funcs.chat_status import (
     bot_admin,
     user_admin,
     is_user_admin,
     can_restrict,
 )
-from TohsakaRobot.modules.helper_funcs.extraction import (
+from src.modules.helper_funcs.extraction import (
     extract_user,
     extract_user_and_text,
 )
-from TohsakaRobot.modules.helper_funcs.string_handling import extract_time
-from TohsakaRobot.modules.log_channel import loggable
+from src.modules.helper_funcs.string_handling import extract_time
+from src.modules.log_channel import loggable
 
 
 @run_async
