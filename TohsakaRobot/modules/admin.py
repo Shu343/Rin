@@ -8,16 +8,16 @@ from telegram.ext import CommandHandler, Filters
 from telegram.ext.dispatcher import run_async
 from telegram.utils.helpers import escape_markdown, mention_html
 
-from TohsakaRobot import dispatcher
-from TohsakaRobot.modules.disable import DisableAbleCommandHandler
-from TohsakaRobot.modules.helper_funcs.chat_status import (
+from src import dispatcher
+from src.modules.disable import DisableAbleCommandHandler
+from src.modules.helper_funcs.chat_status import (
     bot_admin,
     can_promote,
     user_admin,
     can_pin,
 )
-from TohsakaRobot.modules.helper_funcs.extraction import extract_user
-from TohsakaRobot.modules.log_channel import loggable
+from src.modules.helper_funcs.extraction import extract_user
+from src.modules.log_channel import loggable
 
 
 @run_async
