@@ -6,14 +6,14 @@ from telegram.error import BadRequest
 from telegram.ext import Filters, MessageHandler, CommandHandler, run_async
 from telegram.utils.helpers import mention_html
 
-from TohsakaRobot import dispatcher
-from TohsakaRobot.modules.helper_funcs.chat_status import (
+from src import dispatcher
+from src.modules.helper_funcs.chat_status import (
     is_user_admin,
     user_admin,
     can_restrict,
 )
-from TohsakaRobot.modules.log_channel import loggable
-from TohsakaRobot.modules.sql import antiflood_sql as sql
+from src.modules.log_channel import loggable
+from src.modules.sql import antiflood_sql as sql
 
 FLOOD_GROUP = 3
 
