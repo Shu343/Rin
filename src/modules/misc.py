@@ -13,7 +13,7 @@ from telegram import ParseMode, ReplyKeyboardRemove
 from telegram.ext import CommandHandler, run_async, Filters
 from telegram.utils.helpers import escape_markdown, mention_html
 
-from TohsakaRobot import (
+from src import (
     dispatcher,
     OWNER_ID,
     SUDO_USERS,
@@ -21,12 +21,12 @@ from TohsakaRobot import (
     WHITELIST_USERS,
     BAN_STICKER,
 )
-from TohsakaRobot.modules.sql.blacklistusers_sql import BLACKLIST_USERS
-from TohsakaRobot.__main__ import GDPR
-from TohsakaRobot.__main__ import STATS, USER_INFO
-from TohsakaRobot.modules.disable import DisableAbleCommandHandler
-from TohsakaRobot.modules.helper_funcs.extraction import extract_user
-from TohsakaRobot.modules.helper_funcs.filters import CustomFilters
+from src.modules.sql.blacklistusers_sql import BLACKLIST_USERS
+from src.__main__ import GDPR
+from src.__main__ import STATS, USER_INFO
+from src.modules.disable import DisableAbleCommandHandler
+from src.modules.helper_funcs.extraction import extract_user
+from src.modules.helper_funcs.filters import CustomFilters
 
 RUN_STRINGS = (
     "Where do you think you're going?",
