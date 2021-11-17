@@ -1,4 +1,4 @@
-from TohsakaRobot import LOAD, NO_LOAD, LOGGER
+from src import LOAD, NO_LOAD, LOGGER
 
 
 def __list_all_modules():
