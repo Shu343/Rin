@@ -8,16 +8,16 @@ from telegram.ext import Updater, CommandHandler
 from telegram.error import TimedOut, NetworkError
 from telegram import ParseMode
 
-from TohsakaRobot.modules.disable import DisableAbleCommandHandler
+from src.modules.disable import DisableAbleCommandHandler
 from telegram.ext.dispatcher import run_async
-from TohsakaRobot.modules.helper_funcs.chat_status import (
+from src.modules.helper_funcs.chat_status import (
     bot_admin,
     can_promote,
     user_admin,
     can_pin,
     dev_user,
 )
-from TohsakaRobot import dispatcher, LOGGER
+from src import dispatcher, LOGGER
 
 from requests import get
 
