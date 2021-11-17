@@ -3,9 +3,9 @@
 from telegram import Message, User, Bot, Update, ParseMode
 from telegram.ext import CommandHandler, run_async, Filters
 
-from TohsakaRobot import dispatcher, OWNER_ID
+from src import dispatcher, OWNER_ID
 
-import TohsakaRobot.modules.sql.blacklistusers_sql as sql
+import src.modules.sql.blacklistusers_sql as sql
 
 
 @run_async
