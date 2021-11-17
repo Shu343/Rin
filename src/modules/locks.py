@@ -9,10 +9,10 @@ from telegram.ext import CommandHandler, MessageHandler, Filters
 from telegram.ext.dispatcher import run_async
 from telegram.utils.helpers import mention_html
 
-import TohsakaRobot.modules.sql.locks_sql as sql
-from TohsakaRobot import dispatcher, SUDO_USERS, LOGGER
-from TohsakaRobot.modules.disable import DisableAbleCommandHandler
-from TohsakaRobot.modules.helper_funcs.chat_status import (
+import src.modules.sql.locks_sql as sql
+from src import dispatcher, SUDO_USERS, LOGGER
+from src.modules.disable import DisableAbleCommandHandler
+from src.modules.helper_funcs.chat_status import (
     can_delete,
     is_user_admin,
     user_not_admin,
@@ -20,8 +20,8 @@ from TohsakaRobot.modules.helper_funcs.chat_status import (
     bot_can_delete,
     is_bot_admin,
 )
-from TohsakaRobot.modules.log_channel import loggable
-from TohsakaRobot.modules.sql import users_sql
+from src.modules.log_channel import loggable
+from src.modules.sql import users_sql
 
 LOCK_TYPES = {
     "sticker": Filters.sticker,
