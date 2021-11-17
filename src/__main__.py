@@ -17,7 +17,7 @@ from telegram.ext import CommandHandler, Filters, MessageHandler, CallbackQueryH
 from telegram.ext.dispatcher import run_async, DispatcherHandlerStop, Dispatcher
 from telegram.utils.helpers import escape_markdown
 
-from TohsakaRobot import (
+from src import (
     dispatcher,
     updater,
     TOKEN,
@@ -33,9 +33,9 @@ from TohsakaRobot import (
 
 # needed to dynamically load modules
 # NOTE: Module order is not guaranteed, specify that in the config file!
-from TohsakaRobot.modules import ALL_MODULES
-from TohsakaRobot.modules.helper_funcs.chat_status import is_user_admin
-from TohsakaRobot.modules.helper_funcs.misc import paginate_modules
+from src.modules import ALL_MODULES
+from src.modules.helper_funcs.chat_status import is_user_admin
+from src.modules.helper_funcs.misc import paginate_modules
 
 PM_START_TEXT = """
 Hi {}, my name is {}!
@@ -84,7 +84,7 @@ USER_SETTINGS = {}
 GDPR = []
 
 for module_name in ALL_MODULES:
-    imported_module = importlib.import_module("TohsakaRobot.modules." + module_name)
+    imported_module = importlib.import_module("src.modules." + module_name)
     if not hasattr(imported_module, "__mod_name__"):
         imported_module.__mod_name__ = imported_module.__name__
 
