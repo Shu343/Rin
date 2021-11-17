@@ -6,9 +6,9 @@ from telegram.error import BadRequest
 from telegram.ext import run_async, CommandHandler, Filters
 from telegram.utils.helpers import mention_html
 
-from TohsakaRobot import dispatcher, BAN_STICKER, LOGGER, OWNER_ID
-from TohsakaRobot.modules.disable import DisableAbleCommandHandler
-from TohsakaRobot.modules.helper_funcs.chat_status import (
+from src import dispatcher, BAN_STICKER, LOGGER, OWNER_ID
+from src.modules.disable import DisableAbleCommandHandler
+from src.modules.helper_funcs.chat_status import (
     bot_admin,
     user_admin,
     is_user_ban_protected,
@@ -17,9 +17,9 @@ from TohsakaRobot.modules.helper_funcs.chat_status import (
     is_user_in_chat,
     can_delete,
 )
-from TohsakaRobot.modules.helper_funcs.extraction import extract_user_and_text
-from TohsakaRobot.modules.helper_funcs.string_handling import extract_time
-from TohsakaRobot.modules.log_channel import loggable
+from src.modules.helper_funcs.extraction import extract_user_and_text
+from src.modules.helper_funcs.string_handling import extract_time
+from src.modules.log_channel import loggable
 
 
 @run_async
