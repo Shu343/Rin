@@ -9,8 +9,8 @@ from telegram.error import BadRequest, TelegramError
 from telegram.ext import run_async, CommandHandler, MessageHandler, Filters
 from telegram.utils.helpers import mention_html
 
-import TohsakaRobot.modules.sql.global_bans_sql as sql
-from TohsakaRobot import (
+import src.modules.sql.global_bans_sql as sql
+from src import (
     dispatcher,
     OWNER_ID,
     SUDO_USERS,
@@ -18,14 +18,14 @@ from TohsakaRobot import (
     STRICT_GBAN,
     spamwtc,
 )
-from TohsakaRobot.modules.helper_funcs.chat_status import user_admin, is_user_admin
-from TohsakaRobot.modules.helper_funcs.extraction import (
+from src.modules.helper_funcs.chat_status import user_admin, is_user_admin
+from src.modules.helper_funcs.extraction import (
     extract_user,
     extract_user_and_text,
 )
-from TohsakaRobot.modules.helper_funcs.filters import CustomFilters
-from TohsakaRobot.modules.helper_funcs.misc import send_to_list
-from TohsakaRobot.modules.sql.users_sql import get_all_chats
+from src.modules.helper_funcs.filters import CustomFilters
+from src.modules.helper_funcs.misc import send_to_list
+from src.modules.sql.users_sql import get_all_chats
 
 GBAN_ENFORCE_GROUP = 6
 
