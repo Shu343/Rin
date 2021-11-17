@@ -29,7 +29,7 @@ from telegram.ext import (
 )
 from telegram.utils.helpers import escape_markdown, mention_html, mention_markdown
 
-from TohsakaRobot import (
+from src import (
     dispatcher,
     OWNER_ID,
     SUDO_USERS,
@@ -37,17 +37,17 @@ from TohsakaRobot import (
     MESSAGE_DUMP,
     LOGGER,
 )
-from TohsakaRobot.modules.helper_funcs.handlers import CMD_STARTERS
-from TohsakaRobot.modules.helper_funcs.misc import is_module_loaded, send_to_list
-from TohsakaRobot.modules.helper_funcs.chat_status import is_user_admin
-from TohsakaRobot.modules.helper_funcs.extraction import (
+from src.modules.helper_funcs.handlers import CMD_STARTERS
+from src.modules.helper_funcs.misc import is_module_loaded, send_to_list
+from src.modules.helper_funcs.chat_status import is_user_admin
+from src.modules.helper_funcs.extraction import (
     extract_user,
     extract_user_and_text,
 )
-from TohsakaRobot.modules.helper_funcs.string_handling import markdown_parser
-from TohsakaRobot.modules.disable import DisableAbleCommandHandler
+from src.modules.helper_funcs.string_handling import markdown_parser
+from src.modules.disable import DisableAbleCommandHandler
 
-import TohsakaRobot.modules.sql.feds_sql as sql
+import src.modules.sql.feds_sql as sql
 
 # Hello bot owner, I spent for feds many hours of my life. Please don't remove this if you still respect MrYacha and peaktogoo and AyraHikari too.
 # Federation by MrYacha 2018-2019
