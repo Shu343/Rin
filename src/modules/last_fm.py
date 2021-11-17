@@ -5,10 +5,10 @@ import requests
 from telegram import Bot, Update, Message, Chat, ParseMode
 from telegram.ext import run_async, CommandHandler
 
-from TohsakaRobot import dispatcher, LASTFM_API_KEY
-from TohsakaRobot.modules.disable import DisableAbleCommandHandler
+from src import dispatcher, LASTFM_API_KEY
+from src.modules.disable import DisableAbleCommandHandler
 
-import TohsakaRobot.modules.sql.last_fm_sql as sql
+import src.modules.sql.last_fm_sql as sql
 
 
 @run_async
