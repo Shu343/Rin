@@ -13,7 +13,7 @@ FILENAME = __name__.rsplit(".", 1)[-1]
 
 # If module is due to be loaded, then setup all the magical handlers
 if is_module_loaded(FILENAME):
-    from TohsakaRobot.modules.helper_funcs.chat_status import user_admin, is_user_admin
+    from src.modules.helper_funcs.chat_status import user_admin, is_user_admin
     from telegram.ext.dispatcher import run_async
 
     from src.modules.sql import disable_sql as sql
