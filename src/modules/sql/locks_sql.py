@@ -3,7 +3,7 @@ import threading
 
 from sqlalchemy import Column, String, Boolean
 
-from TohsakaRobot.modules.sql import SESSION, BASE
+from src.modules.sql import SESSION, BASE
 
 
 class Permissions(BASE):
