@@ -492,8 +492,6 @@ def start_back(bot, update):
                     disable_web_page_preview=False,
             )    
         query.message.delete()
-    except:
-        Pass
 
 @run_async
 def donate(bot: Bot, update: Update):
