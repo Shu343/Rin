@@ -478,7 +478,7 @@ def get_settings(bot: Bot, update: Update):
     else:
         send_settings(chat.id, user.id, True)
 
-@run_async
+
 def start_back(bot, update):
     try:
         query = update.callback_query
