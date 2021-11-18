@@ -5,8 +5,8 @@ import telegram
 from telegram import Update, Bot, ParseMode
 from telegram.ext import run_async
 
-from TohsakaRobot import dispatcher, LOGGER
-from TohsakaRobot.modules.disable import DisableAbleRegexHandler
+from src import dispatcher, LOGGER
+from src.modules.disable import DisableAbleRegexHandler
 
 DELIMITERS = ("/", ":", "|", "_")
 
