@@ -75,7 +75,7 @@ if ENV:
 
 
 else:
-    from TohsakaRobot.config import Development as Config
+    from src.config import Development as Config
 
     TOKEN = Config.API_KEY
     try:
