@@ -39,12 +39,12 @@ from src.modules.helper_funcs.chat_status import is_user_admin
 from src.modules.helper_funcs.misc import paginate_modules
 
 PM_START_TEXT = """
-Hi {}, my name is [{}](https://telegra.ph/file/d551b6a03367e1e704df6.jpg)!
+Hi {}, my name is [{}]("https://telegra.ph/file/d551b6a03367e1e704df6.jpg")!
 I'm a group management bot with a few fun extras
 
 The support chat is Not now
 
-My repository: <a href="http://github.com/Shu343/Rougi/">Shiki</A>
+My repository: [Shiki]("https://github.com/Shu343/Rougi")
 
 You can find the list of available commands with /help
 """
