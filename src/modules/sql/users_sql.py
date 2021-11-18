@@ -10,8 +10,8 @@ from sqlalchemy import (
     func,
 )
 
-from TohsakaRobot import dispatcher
-from TohsakaRobot.modules.sql import BASE, SESSION
+from src import dispatcher
+from src.modules.sql import BASE, SESSION
 
 
 class Users(BASE):
