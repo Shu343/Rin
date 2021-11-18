@@ -2,8 +2,8 @@ import threading
 
 from sqlalchemy import Column, String, Boolean, UnicodeText, Integer, BigInteger
 
-from TohsakaRobot.modules.helper_funcs.msg_types import Types
-from TohsakaRobot.modules.sql import SESSION, BASE
+from src.modules.helper_funcs.msg_types import Types
+from src.modules.sql import SESSION, BASE
 
 DEFAULT_WELCOME = "Hey {mention}, how are you?"
 DEFAULT_GOODBYE = "Cya! You won't be missed."
