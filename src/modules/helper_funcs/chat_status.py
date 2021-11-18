@@ -3,7 +3,7 @@ from typing import Optional
 
 from telegram import User, Chat, ChatMember, Update, Bot
 
-from TohsakaRobot import DEL_CMDS, SUDO_USERS, WHITELIST_USERS, DEV_USERS, OWNER_ID
+from src import DEL_CMDS, SUDO_USERS, WHITELIST_USERS, DEV_USERS, OWNER_ID
 
 
 def can_delete(chat: Chat, bot_id: int) -> bool:
