@@ -1,6 +1,7 @@
 import datetime
 import importlib
 import re
+import html
 from typing import Optional, List
 
 from telegram import Message, Chat, Update, Bot, User
@@ -54,7 +55,7 @@ HELP_STRINGS = """
     parse_mode=ParseMode.HTML,
 )
 
-RIN_IMG = "https://telegra.ph/file/d551b6a03367e1e704df6.jpg"
+IMG_SRC = "https://telegra.ph/file/d551b6a03367e1e704df6.jpg"
 
 buttons = [
     [
@@ -161,7 +162,7 @@ def start(bot: Bot, update: Update, args: List[str]):
         else:
             first_name = update.effective_user.first_name
             update.effective_message.reply_photo(
-                "https://telegra.ph/file/d551b6a03367e1e704df6.jpg",
+                IMG_SRC,
                 PM_START_TEXT.format(
                     escape_markdown(first_name),
                     escape_markdown(bot.first_name),
