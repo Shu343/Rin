@@ -1,8 +1,8 @@
 from telegram import Update, Bot, ParseMode
 from telegram.ext import run_async
 
-from TohsakaRobot.modules.disable import DisableAbleCommandHandler
-from TohsakaRobot import dispatcher
+from src.modules.disable import DisableAbleCommandHandler
+from src import dispatcher
 
 from requests import get
 
