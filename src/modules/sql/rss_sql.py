@@ -2,7 +2,7 @@ import threading
 
 from sqlalchemy import Column, UnicodeText, Integer
 
-from TohsakaRobot.modules.sql import BASE, SESSION
+from src.modules.sql import BASE, SESSION
 
 
 class RSS(BASE):
