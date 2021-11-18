@@ -7,8 +7,8 @@ from time import sleep
 from telegram import Message, Chat, Update, Bot
 from telegram.ext import run_async
 
-from TohsakaRobot import dispatcher, WALL_API
-from TohsakaRobot.modules.disable import DisableAbleCommandHandler
+from src import dispatcher, WALL_API
+from src.modules.disable import DisableAbleCommandHandler
 
 
 @run_async
