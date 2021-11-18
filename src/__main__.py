@@ -480,7 +480,7 @@ def get_settings(bot: Bot, update: Update):
 
 @run_async
 def start_back(update, context):
-      query.data == "start_back":
+         query.data == "start_back":
         query.message.edit_photo(
                 IMG_SRC,
                 PM_START_TEXT,
