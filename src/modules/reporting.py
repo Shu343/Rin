@@ -7,10 +7,10 @@ from telegram.error import BadRequest, Unauthorized
 from telegram.ext import CommandHandler, RegexHandler, run_async, Filters
 from telegram.utils.helpers import mention_html
 
-from TohsakaRobot import dispatcher, LOGGER
-from TohsakaRobot.modules.helper_funcs.chat_status import user_not_admin, user_admin
-from TohsakaRobot.modules.log_channel import loggable
-from TohsakaRobot.modules.sql import reporting_sql as sql
+from src import dispatcher, LOGGER
+from src.modules.helper_funcs.chat_status import user_not_admin, user_admin
+from src.modules.log_channel import loggable
+from src.modules.sql import reporting_sql as sql
 
 REPORT_GROUP = 5
 
