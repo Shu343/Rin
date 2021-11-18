@@ -2,7 +2,7 @@ import threading
 
 from sqlalchemy import Column, String, UnicodeText, func, distinct, Integer, Boolean
 
-from TohsakaRobot.modules.sql import SESSION, BASE
+from src.modules.sql import SESSION, BASE
 
 
 class Federations(BASE):
