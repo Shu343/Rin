@@ -39,7 +39,7 @@ from src.modules.helper_funcs.chat_status import is_user_admin
 from src.modules.helper_funcs.misc import paginate_modules
 
 PM_START_TEXT = """
-Hi {}, my name is {}!
+Hi {}, my name is [{}](https://telegra.ph/file/d551b6a03367e1e704df6.jpg)!
 I'm a group management bot with a few fun extras
 
 The support chat is Not now
@@ -55,7 +55,6 @@ HELP_STRINGS = """
     parse_mode=ParseMode.HTML,
 )
 
-IMG_SRC = "https://telegra.ph/file/d551b6a03367e1e704df6.jpg"
 
 buttons = [
     [
@@ -161,8 +160,7 @@ def start(bot: Bot, update: Update, args: List[str]):
 
         else:
             first_name = update.effective_user.first_name
-            update.effective_message.reply_photo(
-                IMG_SRC,
+            update.effective_message.reply_text(
                 PM_START_TEXT.format(
                     escape_markdown(first_name),
                     escape_markdown(bot.first_name),
@@ -484,7 +482,6 @@ def start_back(bot, update):
         query = update.callback_query
         if query.data == "start_back":
             query.message.edit_text(
-                    IMG_SRC,
                     PM_START_TEXT,
                     reply_markup=InlineKeyboardMarkup(buttons),
                     parse_mode=ParseMode.MARKDOWN,
