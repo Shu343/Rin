@@ -8,9 +8,9 @@ from telegram.error import BadRequest, Unauthorized
 from telegram.ext import MessageHandler, Filters, CommandHandler
 from telegram.ext.dispatcher import run_async
 
-import TohsakaRobot.modules.sql.users_sql as sql
-from TohsakaRobot import dispatcher, OWNER_ID, LOGGER
-from TohsakaRobot.modules.helper_funcs.filters import CustomFilters
+import src.modules.sql.users_sql as sql
+from src import dispatcher, OWNER_ID, LOGGER
+from src.modules.helper_funcs.filters import CustomFilters
 
 USERS_GROUP = 4
 
