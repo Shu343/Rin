@@ -39,7 +39,7 @@ from src.modules.helper_funcs.chat_status import is_user_admin
 from src.modules.helper_funcs.misc import paginate_modules
 
 PM_START_TEXT = """
-Hi {}, my name is [{}](https://telegra.ph/file/d551b6a03367e1e704df6.jpg)!
+Hi {}, my name is <img src = "https://images6.alphacoders.com/652/652708.jpg" alt ="{}">!
 I'm a group management bot with a few fun extras
 
 The support chat is Not now
@@ -487,7 +487,9 @@ def start_back(bot, update):
                     parse_mode=ParseMode.MARKDOWN,
                     timeout=60,
                     disable_web_page_preview=False,
-            )    
+            ).format(
+    parse_mode=ParseMode.HTML,
+)   
     except BadRequest as excp:
         if excp.message == "Message can't be deleted":
             pass
