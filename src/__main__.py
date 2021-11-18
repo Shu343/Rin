@@ -483,14 +483,14 @@ def start_back(bot, update):
     try:
         query = update.callback_query
         if query.data == "start_back":
-        query.message.edit_photo(
-                IMG_SRC,
-                PM_START_TEXT,
-                reply_markup=InlineKeyboardMarkup(buttons),
-                parse_mode=ParseMode.MARKDOWN,
-                timeout=60,
-                disable_web_page_preview=False,
-        )    
+            query.message.edit_photo(
+                    IMG_SRC,
+                    PM_START_TEXT,
+                    reply_markup=InlineKeyboardMarkup(buttons),
+                    parse_mode=ParseMode.MARKDOWN,
+                    timeout=60,
+                    disable_web_page_preview=False,
+            )    
         query.message.delete()
     except:
         Pass
