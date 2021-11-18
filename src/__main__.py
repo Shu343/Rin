@@ -483,7 +483,7 @@ def start_back(bot, update):
     try:
         query = update.callback_query
         if query.data == "start_back":
-            query.message.edit_photo(
+            query.message.edit_text(
                     IMG_SRC,
                     PM_START_TEXT,
                     reply_markup=InlineKeyboardMarkup(buttons),
