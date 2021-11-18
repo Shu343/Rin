@@ -15,21 +15,21 @@ from telegram.ext import (
 )
 from telegram.utils.helpers import mention_html
 
-import TohsakaRobot.modules.sql.welcome_sql as sql
-from TohsakaRobot import dispatcher, OWNER_ID, LOGGER, SUDO_USERS, SUPPORT_USERS
-from TohsakaRobot.modules.helper_funcs.chat_status import (
+import src.modules.sql.welcome_sql as sql
+from src import dispatcher, OWNER_ID, LOGGER, SUDO_USERS, SUPPORT_USERS
+from src.modules.helper_funcs.chat_status import (
     user_admin,
     can_delete,
     is_user_ban_protected,
 )
-from TohsakaRobot.modules.helper_funcs.misc import build_keyboard, revert_buttons
-from TohsakaRobot.modules.helper_funcs.msg_types import get_welcome_type
-from TohsakaRobot.modules.helper_funcs.string_handling import (
+from src.modules.helper_funcs.misc import build_keyboard, revert_buttons
+from src.modules.helper_funcs.msg_types import get_welcome_type
+from src.modules.helper_funcs.string_handling import (
     markdown_parser,
     escape_invalid_curly_brackets,
     markdown_to_html,
 )
-from TohsakaRobot.modules.log_channel import loggable
+from src.modules.log_channel import loggable
 
 VALID_WELCOME_FORMATTERS = [
     "first",
