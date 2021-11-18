@@ -5,9 +5,9 @@ from feedparser import parse
 from telegram import ParseMode, constants
 from telegram.ext import CommandHandler
 
-from TohsakaRobot import dispatcher, updater
-from TohsakaRobot.modules.helper_funcs.chat_status import user_admin
-from TohsakaRobot.modules.sql import rss_sql as sql
+from src import dispatcher, updater
+from src.modules.helper_funcs.chat_status import user_admin
+from src.modules.sql import rss_sql as sql
 
 
 def show_url(bot, update, args):
