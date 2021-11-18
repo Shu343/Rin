@@ -6,10 +6,10 @@ from telegram.error import BadRequest
 from telegram.ext import CommandHandler, run_async, Filters
 from telegram.utils.helpers import escape_markdown
 
-import TohsakaRobot.modules.sql.rules_sql as sql
-from TohsakaRobot import dispatcher
-from TohsakaRobot.modules.helper_funcs.chat_status import user_admin
-from TohsakaRobot.modules.helper_funcs.string_handling import markdown_parser
+import src.modules.sql.rules_sql as sql
+from src import dispatcher
+from src.modules.helper_funcs.chat_status import user_admin
+from src.modules.helper_funcs.string_handling import markdown_parser
 
 
 @run_async
