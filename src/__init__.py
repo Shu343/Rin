@@ -146,7 +146,7 @@ WHITELIST_USERS = list(WHITELIST_USERS)
 SUPPORT_USERS = list(SUPPORT_USERS)
 
 # Load at end tsure all prev variables have been set
-from TohsakaRobot.modules.helper_funcs.handlers import (
+from src.modules.helper_funcs.handlers import (
     CustomCommandHandler,
     CustomRegexHandler,
 )
