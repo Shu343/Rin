@@ -1,11 +1,11 @@
 # Shell command executor
 # Written by t.me/Zero_cool7870 and t.me/TheRealPhoenix
 
-from TohsakaRobot import dispatcher, LOGGER
+from src import dispatcher, LOGGER
 from telegram import Bot, Update
 from telegram.ext.dispatcher import run_async
-from TohsakaRobot.modules.helper_funcs.chat_status import dev_user
-from TohsakaRobot.modules.helper_funcs.misc import sendMessage
+from src.modules.helper_funcs.chat_status import dev_user
+from src.modules.helper_funcs.misc import sendMessage
 from telegram.ext import CommandHandler
 from subprocess import Popen, PIPE
 
