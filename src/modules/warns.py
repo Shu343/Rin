@@ -22,25 +22,25 @@ from telegram.ext import (
 )
 from telegram.utils.helpers import mention_html
 
-from TohsakaRobot import dispatcher, BAN_STICKER
-from TohsakaRobot.modules.disable import DisableAbleCommandHandler
-from TohsakaRobot.modules.helper_funcs.chat_status import (
+from src import dispatcher, BAN_STICKER
+from src.modules.disable import DisableAbleCommandHandler
+from src.modules.helper_funcs.chat_status import (
     is_user_admin,
     bot_admin,
     user_admin_no_reply,
     user_admin,
     can_restrict,
 )
-from TohsakaRobot.modules.helper_funcs.extraction import (
+from src.modules.helper_funcs.extraction import (
     extract_text,
     extract_user_and_text,
     extract_user,
 )
-from TohsakaRobot.modules.helper_funcs.filters import CustomFilters
-from TohsakaRobot.modules.helper_funcs.misc import split_message
-from TohsakaRobot.modules.helper_funcs.string_handling import split_quotes
-from TohsakaRobot.modules.log_channel import loggable
-from TohsakaRobot.modules.sql import warns_sql as sql
+from src.modules.helper_funcs.filters import CustomFilters
+from src.modules.helper_funcs.misc import split_message
+from src.modules.helper_funcs.string_handling import split_quotes
+from src.modules.log_channel import loggable
+from src.modules.sql import warns_sql as sql
 
 WARN_HANDLER_GROUP = 9
 CURRENT_WARNING_FILTER_STRING = "<b>Current warning filters in this chat:</b>\n"
