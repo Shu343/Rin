@@ -44,7 +44,7 @@ I'm a group management bot with a few fun extras
 
 The support chat is Not now
 
-My repository: <a href="http://github.com/Shu343/Rougi/">Rin</A>
+My repository: <a href="http://github.com/Shu343/Rougi/">Shiki</A>
 
 You can find the list of available commands with /help
 """
@@ -60,7 +60,7 @@ IMG_SRC = "https://telegra.ph/file/d551b6a03367e1e704df6.jpg"
 buttons = [
     [
         InlineKeyboardButton(
-        text="Add Rin", url="t.me/RinTohsaka_Rbot?startgroup=true"
+        text="Add Shiki", url="t.me/RinTohsaka_Rbot?startgroup=true"
         ),
         InlineKeyboardButton(
         text="Help", callback_data="help_back"
@@ -548,7 +548,7 @@ def migrate_chats(bot: Bot, update: Update):
 def main():
     test_handler = CommandHandler("test", test)
     start_handler = CommandHandler("start", start, pass_args=True)
-    start_callback_handler = CallbackQueryHandler(send_start, pattern=r"bot_start")
+    start_callback_handler = CallbackQueryHandler(send_start, pattern=r"start_back")
 
     help_handler = CommandHandler("help", get_help)
     help_callback_handler = CallbackQueryHandler(help_button, pattern=r"help_")
@@ -562,6 +562,7 @@ def main():
     # dispatcher.add_handler(test_handler)
     dispatcher.add_handler(start_handler)
     dispatcher.add_handler(help_handler)
+    dispatcher.add_handler(start_callback_handler)
     dispatcher.add_handler(settings_handler)
     dispatcher.add_handler(help_callback_handler)
     dispatcher.add_handler(settings_callback_handler)
