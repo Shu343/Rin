@@ -2,7 +2,7 @@ import threading
 
 from sqlalchemy import func, distinct, Column, String, UnicodeText
 
-from TohsakaRobot.modules.sql import SESSION, BASE
+from src.modules.sql import SESSION, BASE
 
 
 class BlackListFilters(BASE):
