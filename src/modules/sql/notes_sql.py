@@ -3,8 +3,8 @@ import threading
 
 from sqlalchemy import Column, String, Boolean, UnicodeText, Integer, func, distinct
 
-from TohsakaRobot.modules.helper_funcs.msg_types import Types
-from TohsakaRobot.modules.sql import SESSION, BASE
+from src.modules.helper_funcs.msg_types import Types
+from src.modules.sql import SESSION, BASE
 
 
 class Notes(BASE):
