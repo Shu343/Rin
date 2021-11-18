@@ -479,9 +479,10 @@ def get_settings(bot: Bot, update: Update):
         send_settings(chat.id, user.id, True)
 
 @run_async
-def start_back(update, context, Bot):
-    query = update.callback_query
-    if query.data == "start_back":
+def start_back(bot, update):
+    try:
+        query = update.callback_query
+        if query.data == "start_back":
         query.message.edit_photo(
                 IMG_SRC,
                 PM_START_TEXT,
@@ -489,8 +490,10 @@ def start_back(update, context, Bot):
                 parse_mode=ParseMode.MARKDOWN,
                 timeout=60,
                 disable_web_page_preview=False,
-        )
-
+        )    
+        query.message.delete()
+    except:
+        Pass
 
 @run_async
 def donate(bot: Bot, update: Update):
