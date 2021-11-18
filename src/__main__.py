@@ -488,7 +488,9 @@ def start_back(bot, update):
                     timeout=60,
                     disable_web_page_preview=False,
             )    
-
+    except BadRequest as excp:
+        if excp.message == "Message can't be deleted":
+            pass
 
 @run_async
 def donate(bot: Bot, update: Update):
