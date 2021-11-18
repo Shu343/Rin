@@ -1,1 +1,1 @@
-worker: python3 -m TohsakaRobot
+worker: python3 -m src
