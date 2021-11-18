@@ -13,9 +13,9 @@ from telegram import Update, Bot
 from telegram.ext import CommandHandler, run_async
 from telegram.utils.helpers import escape_markdown
 
-from TohsakaRobot import dispatcher
+from src import dispatcher
 
-from TohsakaRobot.modules.disable import DisableAbleCommandHandler
+from src.modules.disable import DisableAbleCommandHandler
 
 
 @run_async
