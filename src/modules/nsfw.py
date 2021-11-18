@@ -7,9 +7,9 @@ from telegram import Message, Chat, Update, Bot, MessageEntity
 from telegram import ParseMode
 from telegram.ext import CommandHandler, run_async
 
-from TohsakaRobot import dispatcher, updater
-from TohsakaRobot.modules.disable import DisableAbleCommandHandler
-from TohsakaRobot.modules.helper_funcs.chat_status import is_user_in_chat
+from src import dispatcher, updater
+from src.modules.disable import DisableAbleCommandHandler
+from src.modules.helper_funcs.chat_status import is_user_in_chat
 
 
 @run_async
