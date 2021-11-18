@@ -6,10 +6,10 @@ from telegram import ParseMode, MAX_MESSAGE_LENGTH
 from telegram.ext.dispatcher import run_async
 from telegram.utils.helpers import escape_markdown
 
-import TohsakaRobot.modules.sql.userinfo_sql as sql
-from TohsakaRobot import dispatcher, SUDO_USERS
-from TohsakaRobot.modules.disable import DisableAbleCommandHandler
-from TohsakaRobot.modules.helper_funcs.extraction import extract_user
+import src.modules.sql.userinfo_sql as sql
+from src import dispatcher, SUDO_USERS
+from src.modules.disable import DisableAbleCommandHandler
+from src.modules.helper_funcs.extraction import extract_user
 
 
 @run_async
