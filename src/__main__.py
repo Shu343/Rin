@@ -1,7 +1,6 @@
 import datetime
 import importlib
 import re
-import html
 from typing import Optional, List
 
 from telegram import Message, Chat, Update, Bot, User
@@ -39,12 +38,12 @@ from src.modules.helper_funcs.chat_status import is_user_admin
 from src.modules.helper_funcs.misc import paginate_modules
 
 PM_START_TEXT = """
-Hi {}, my name is [{}](https://telegra.ph/file/d551b6a03367e1e704df6.jpg)!
+Heya, my name is [Shiki Ryougi]("https://telegra.ph/file/d551b6a03367e1e704df6.jpg")!
 I'm a group management bot with a few fun extras
 
 The support chat is Not now
 
-My repository: [Shiki](https://github.com/Shu343/Rougi)
+My repository: [Shiki]("https://github.com/Shu343/Rougi")
 
 You can find the list of available commands with /help
 """
@@ -482,11 +481,7 @@ def start_back(bot, update):
         query = update.callback_query
         if query.data == "start_back":
             query.message.edit_text(
-                    PM_START_TEXT.format(
-                    escape_markdown(first_name),
-                    escape_markdown(bot.first_name),
-                    OWNER_ID,
-                ),
+                    PM_START_TEXT,
                     reply_markup=InlineKeyboardMarkup(buttons),
                     parse_mode=ParseMode.MARKDOWN,
                     timeout=60,
