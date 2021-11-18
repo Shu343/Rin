@@ -39,7 +39,7 @@ from src.modules.helper_funcs.chat_status import is_user_admin
 from src.modules.helper_funcs.misc import paginate_modules
 
 PM_START_TEXT = """
-Hi {}, my name is <img src = "https://images6.alphacoders.com/652/652708.jpg" alt ="{}">!
+Hi {}, my name is <imgsrc= "https://images6.alphacoders.com/652/652708.jpg" alt ="{}">!
 I'm a group management bot with a few fun extras
 
 The support chat is Not now
