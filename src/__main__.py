@@ -479,7 +479,7 @@ def get_settings(bot: Bot, update: Update):
         send_settings(chat.id, user.id, True)
 
 @run_async
-def start_back(update, Bot, context):
+def start_back(update, context, Bot):
     query = update.callback_query
     if query.data == "start_back":
         query.message.edit_photo(
