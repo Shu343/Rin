@@ -162,7 +162,7 @@ def start(bot: Bot, update: Update, args: List[str]):
                     escape_markdown(bot.first_name),
                     OWNER_ID,
                 ),
-                parse_mode=ParseMode.MARKDOWM,
+                parse_mode=ParseMode.MARKDOWN,
                 reply_markup=InlineKeyboardMarkup(buttons),
                 ),
     else:
