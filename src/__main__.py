@@ -43,9 +43,9 @@ I'm a group management bot with a few fun extras
 
 The support chat is Not now
 
-My repository: 
+My repository: [Shiki Ryougi](https://github.com/Shu343/Shiki-Rougi)
 
-You can find the list of available commands with /help
+To see helpable commands click on Help button
 """
 
 HELP_STRINGS = """
@@ -166,7 +166,7 @@ def start(bot: Bot, update: Update, args: List[str]):
                 reply_markup=InlineKeyboardMarkup(buttons),
                 ),
     else:
-        update.effective_message.reply_text("Yo, why'd you summon me?")
+        update.effective_message.reply_text("Yo, why'd you call me?")
 
 
 
