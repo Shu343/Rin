@@ -14,7 +14,7 @@ from src.modules.disable import (
     DisableAbleCommandHandler,
     DisableAbleRegexHandler,
 )
-from src.modules.sql import afk_sql as sql
+from src.modules.sql import afk_sql as afksql
 from src.modules.users import get_user_id
 from src.modules.helper_funcs.extraction import extract_user
 
@@ -29,7 +29,7 @@ def afk(bot: Bot, update: Update):
     else:
         reason = ""
 
-    sql.set_afk(update.effective_user.id, reason)
+    afksql.set_afk(update.effective_user.id, reason)
     update.effective_message.reply_text(
         "{} is now AFK!".format(update.effective_user.first_name)
     )
@@ -42,7 +42,7 @@ def no_longer_afk(bot: Bot, update: Update):
     if not user:  # ignore channels
         return
 
-    res = sql.rm_afk(user.id)
+    res = afksql.rm_afk(user.id)
     if res:
         update.effective_message.reply_text(
             "{} is no longer AFK!".format(update.effective_user.first_name)
@@ -74,8 +74,8 @@ def reply_afk(bot: Bot, update: Update):
             else:
                 return
 
-            if sql.is_afk(user_id):
-                valid, reason = sql.check_afk_status(user_id)
+            if afksql.is_afk(user_id):
+                valid, reason = afksql.check_afk_status(user_id)
                 if valid:
                     if not reason:
                         res = "{} is AFK!".format(fst_name)
@@ -85,7 +85,7 @@ def reply_afk(bot: Bot, update: Update):
 
 
 def __gdpr__(user_id):
-    sql.rm_afk(user_id)
+    afksql.rm_afk(user_id)
 
 
 @run_async
