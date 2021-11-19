@@ -165,19 +165,13 @@ def start(bot: Bot, update: Update, args: List[str]):
                     escape_markdown(bot.first_name),
                     OWNER_ID,
                 ),
-                parse_mode=ParseMode.HTML,
+                parse_mode=ParseMode.MarkDown,
                 reply_markup=InlineKeyboardMarkup(buttons),
                 ),
     else:
         update.effective_message.reply_text("Yo, why'd you summon me?")
 
-def send_start(bot, update):
-    #Try to remove old message
-    try:
-        query = update.callback_query
-        query.message.delete()
-    except:
-        Pass
+
 
 # for test purposes
 def error_callback(bot, update, error):
