@@ -16,7 +16,6 @@ from src.modules.disable import (
 )
 from src.modules.sql import afk_sql as sql
 from src.modules.users import get_user_id
-from src.modules.dis
 from src.modules.helper_funcs.extraction import extract_user
 
 AFK_GROUP = 7
