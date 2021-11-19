@@ -215,7 +215,7 @@ def help_button(bot: Bot, update: Update):
                 )
                 + HELPABLE[module].__help__
             )
-            query.message.reply_text(
+            query.message.edit_text(
                 text=text,
                 parse_mode=ParseMode.MARKDOWN,
                 reply_markup=InlineKeyboardMarkup(
@@ -225,7 +225,7 @@ def help_button(bot: Bot, update: Update):
 
         elif prev_match:
             curr_page = int(prev_match.group(1))
-            query.message.reply_text(
+            query.message.edit_text(
                 HELP_STRINGS,
                 parse_mode=ParseMode.MARKDOWN,
                 reply_markup=InlineKeyboardMarkup(
@@ -235,7 +235,7 @@ def help_button(bot: Bot, update: Update):
 
         elif next_match:
             next_page = int(next_match.group(1))
-            query.message.reply_text(
+            query.message.edit_text(
                 HELP_STRINGS,
                 parse_mode=ParseMode.MARKDOWN,
                 reply_markup=InlineKeyboardMarkup(
@@ -244,7 +244,7 @@ def help_button(bot: Bot, update: Update):
             )
 
         elif back_match:
-            query.message.reply_text(
+            query.message.edit_text(
                 text=HELP_STRINGS,
                 parse_mode=ParseMode.MARKDOWN,
                 reply_markup=InlineKeyboardMarkup(
@@ -254,7 +254,7 @@ def help_button(bot: Bot, update: Update):
 
         # ensure no spinny white circle
         bot.answer_callback_query(query.id)
-        query.message.delete()
+      #  query.message.delete()
     except BadRequest as excp:
         if excp.message == "Message is not modified":
             pass
