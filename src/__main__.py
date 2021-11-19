@@ -50,10 +50,7 @@ You can find the list of available commands with /help
 
 HELP_STRINGS = """
 *All Helpable commands are here:*
-""".format(
-    dispatcher.bot.first_name, ""
-    if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\nKindly use ! for commands if / is not working\n")
-
+"""
 
 buttons = [
     [
@@ -165,7 +162,7 @@ def start(bot: Bot, update: Update, args: List[str]):
                     escape_markdown(bot.first_name),
                     OWNER_ID,
                 ),
-                parse_mode=ParseMode.MarkDown,
+                parse_mode=ParseMode.MARKDOWM,
                 reply_markup=InlineKeyboardMarkup(buttons),
                 ),
     else:
