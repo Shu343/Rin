@@ -254,7 +254,7 @@ def help_button(bot: Bot, update: Update):
 
         # ensure no spinny white circle
         bot.answer_callback_query(query.id)
-        query.message.edit_text()
+        query.message.delete()
     except BadRequest as excp:
         if excp.message == "Message is not modified":
             pass
