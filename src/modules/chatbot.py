@@ -9,6 +9,8 @@ from google_trans_new import google_translator
 
 translator = google_translator()
 
+url = "https://acobot-brainshop-ai-v1.p.rapidapi.com/get"
+
 
 
 bot = Client("ShikiChat", bot_token=TOKEN, api_id=6,
