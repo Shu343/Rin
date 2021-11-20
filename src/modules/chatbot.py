@@ -11,7 +11,7 @@ translator = google_translator()
 
 
 
-bot = Client("ShikiChat", bot_token=BOT_TOKEN, api_id=6,
+bot = Client("ShikiChat", bot_token=TOKEN, api_id=6,
              api_hash="eb06d4abfb49dc3eeb1aeb98ae0f581e")
 print("\nShiki Chatbot Started!\n")
 
