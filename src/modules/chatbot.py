@@ -1,6 +1,6 @@
 import os
 from pyrogram import filters, Client
-from src import TOKEN, API_ID, API_HASH
+from src import TOKEN
 import aiofiles
 import aiohttp
 from random import randint
@@ -11,8 +11,8 @@ translator = google_translator()
 
 
 
-bot = Client("ShikiChat", bot_token=BOT_TOKEN, api_id=API_ID,
-             api_hash="API_HASH")
+bot = Client("ShikiChat", bot_token=BOT_TOKEN, api_id=6,
+             api_hash="eb06d4abfb49dc3eeb1aeb98ae0f581e")
 print("\nShiki Chatbot Started!\n")
 
 
