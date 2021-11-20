@@ -68,3 +68,5 @@ async def mizuki(client, message):
     except:
         return
     message.continue_propagation()
+
+bot.run()
