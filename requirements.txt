@@ -9,6 +9,7 @@ googletran
 Pillow>=4.2.0
 aiohttp>=2.2.5
 pynewtonmath
+pyrogram
 googletrans
 psutil
 bleach
