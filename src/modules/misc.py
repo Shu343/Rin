@@ -564,20 +564,11 @@ NOTE: Neither of these will get triggered if used by admins.
 - /getsticker: reply to a sticker to get the raw PNG image.
 - /steal: reply to a sticker or image to add it to your pack.
 ──────────────────────────────────────
-*Last.FM*
-Share what you're what listening to with the help of this module!
-*Available commands:*
- - /setuser <username>: sets your last.fm username.
- - /clearuser: removes your last.fm username from the bot's database.
- - /lastfm: returns what you're scrobbling on last.fm.
-────────────────────────────────────── 
 *DICTIONARY*
 Ever stumbled upon a word that you didn't know of and wanted to look it up?
 With this module, you can find the definitions of words without having to leave the app!
 *Available commands:*
  - /define <word>: returns the definition of the word.
- 
- 
 """
 
 __mod_name__ = "Misc"
