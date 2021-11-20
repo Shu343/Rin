@@ -1,6 +1,6 @@
 import os
 from pyrogram import filters, Client
-from src import BOT_ID, TOKEN, API_ID, API_HASH
+from src import TOKEN, API_ID, API_HASH
 import aiofiles
 import aiohttp
 from random import randint
