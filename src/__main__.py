@@ -55,7 +55,7 @@ HELP_STRINGS = """
 buttons = [
     [
         InlineKeyboardButton(
-        text="Add Shiki", url="t.me/RinTohsaka_Rbot?startgroup=true"
+        text="Add Shiki", url="t.me/Shiki_rbot?startgroup=true"
         ),
         InlineKeyboardButton(
         text="Help", callback_data="help_back"
