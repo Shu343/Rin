@@ -35,7 +35,7 @@ async def mizuki(client, message):
         aibot = message.reply_to_message.from_user.id
     except:
         return
-    if aibot != 2142084375:
+    if aibot != "2142084375":
         message.continue_propagation()
     text = message.text
 
