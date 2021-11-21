@@ -94,7 +94,7 @@ def kuki(update: Update, bot: Bot) -> str:
            parse_mode=ParseMode.HTML,
        )
 
-def kuki_message(context, message):
+def kuki_message(bot: Bot, message):
     reply_message = message.reply_to_message
     if message.text.lower() == "kuki":
         return True
