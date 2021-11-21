@@ -7,7 +7,7 @@ Originally a Marie fork, Rin was created for personal use by [this person](https
 
 <P ALIGN = CENTER>Can be found n telegram as <a href="https://t.me/RinTohsaka_Rbot/">Rin</A></P>
 
-If you want to create your own bot, you can basically follow the steps given [here](https://github.com/PaulSonOfLars/tgbot/blob/master/README.md)
+I you want to create your own bot, you can basically follow the steps given [here](https://github.com/PaulSonOfLars/tgbot/blob/master/README.md)
 
 OR
 
