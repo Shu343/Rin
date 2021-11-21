@@ -138,6 +138,10 @@ else:
     spamwtc = spamwatch.Client(SPAMWATCH)
 
 updater = tg.Updater(TOKEN, workers=WORKERS)
+          print(
+              "All process is done Started",
+              "And this project is a fork ko tg_bot without that I can't do this"
+          )                 
 dispatcher = updater.dispatcher
 
 SUDO_USERS = list(SUDO_USERS)
