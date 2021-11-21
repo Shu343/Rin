@@ -38,7 +38,7 @@ from src.modules.helper_funcs.chat_status import is_user_admin
 from src.modules.helper_funcs.misc import paginate_modules
 
 PM_START_TEXT = """
-Heya, my name is [Shiki Ryougi](https://telegra.ph/file/d551b6a03367e1e704df6.jpg)!
+Heya, my name is <IMG SRC = "https://images6.alphacoders.com/652/652708.jpg" ALT ="Rin">!
 I'm a group management bot with a few fun extras
 
 The support chat is Not now
@@ -162,7 +162,7 @@ def start(bot: Bot, update: Update, args: List[str]):
                     escape_markdown(bot.first_name),
                     OWNER_ID,
                 ),
-                parse_mode=ParseMode.MARKDOWN,
+                parse_mode=ParseMode.HTML,
                 reply_markup=InlineKeyboardMarkup(buttons),
                 ),
     else:
