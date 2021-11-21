@@ -16,7 +16,6 @@ from telegram.ext import (
 from telegram.utils.helpers import mention_html
 
 import src.modules.sql.welcome_sql as sql
-from src.modules.languages import tl
 from src import dispatcher, OWNER_ID, LOGGER, SUDO_USERS, SUPPORT_USERS
 from src.modules.helper_funcs.chat_status import (
     user_admin,
@@ -743,8 +742,21 @@ def __chat_settings__(chat_id, user_id):
     )
 
 
-def get_help(chat):
-    return tl(chat, "greetings_help")
+__help__ = """
+Welcome/bid farewell to members in your group with the help of this module!
+*Admin only:*
+ - /welcome <on/off>: enable/disable welcome messages.
+ - /welcome: shows current welcome settings.
+ - /welcome noformat: shows current welcome settings, without the formatting - useful to recycle your welcome messages!
+ - /goodbye -> same usage and args as /welcome.
+ - /setwelcome <sometext>: set a custom welcome message. If used replying to media, uses that media.
+ - /setgoodbye <sometext>: set a custom goodbye message. If used replying to media, uses that media.
+ - /resetwelcome: reset to the default welcome message.
+ - /resetgoodbye: reset to the default goodbye message.
+ - /cleanwelcome <on/off>: On new member, try to delete the previous welcome message to avoid spamming the chat.
+ - /wlcmutehelp: gives information about welcome mutes.
+ - /welcomehelp: view more formatting information for custom welcome/goodbye messages.
+"""
 
 
 __mod_name__ = "Greetings"
