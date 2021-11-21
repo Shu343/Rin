@@ -3,6 +3,11 @@ __lang__ = "🇺🇸 English"
 
 en = {
 
+        "help_text": """
+*All helpable commands are here*
+""",
+
+
         "welcome_help": """
 Welcome/bid farewell to members in your group with the help of this module!
 
@@ -38,7 +43,7 @@ be a sentence, encompass it with quotes, as such: `/addwarn "very angry" This is
 """,
 
        "userinfo_help": """
-- /setbio <text>: while replying, will save another user's bio
+ - /setbio <text>: while replying, will save another user's bio
  - /bio: will get your or another user's bio. This cannot be set by yourself.
  - /setme <text>: will set your info
  - /me: will get your or another user's info
