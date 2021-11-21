@@ -65,7 +65,7 @@ RUN apt update && apt upgrade -y && \
 RUN pip3 install --upgrade pip setuptools
 
 # Copy Python Requirements to /root/Shiki-Ryougi
-RUN git clone https://github.com/Shiki-Ryougi/Shiki-Ryougi /root/Shiki-Ryougi
+RUN git clone https://github.com/Shu343/Shiki-Ryougi /root/Shiki-Ryougi
 WORKDIR /root/Shiki-Ryougi
 
 #Copy config file to /root/Shiki-Ryougi/src
