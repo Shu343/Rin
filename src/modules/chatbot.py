@@ -15,9 +15,9 @@ from telegram.ext import (CallbackQueryHandler, CommandHandler,
 from telegram.error import BadRequest, RetryAfter, Unauthorized
 from telegram.utils.helpers import mention_html, mention_markdown, escape_markdown
 
-from src_Robot.modules.helper_funcs.filters import CustomFilters
-from src_Robot.modules.helper_funcs.chat_status import user_admin, user_admin_no_reply
-from src_Robot import dispatcher, updater, SUPPORT_CHAT
+from src.modules.helper_funcs.filters import CustomFilters
+from src.modules.helper_funcs.chat_status import user_admin, user_admin_no_reply
+from src import dispatcher, updater, SUPPORT_CHAT
 from src.modules.log_channel import gloggable
 
  
