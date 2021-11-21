@@ -43,7 +43,7 @@ I'm a group management bot with a few fun extras
 
 The support chat is Not now
 
-My repository: [Shiki Ryougi](https://github.com/Shu343/Shiki-Rougi)
+My repository: <a href="https://github.com/shu343/Rougi-Shiki">Ryougi Shiki</A>
 
 To see helpable commands click on Help button
 """
