@@ -1,5 +1,5 @@
 import tracemoepy
-from pyrogram import filters
+from pyrogram import filters, Client
 from src import TOKEN
 import os
 
