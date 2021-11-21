@@ -139,6 +139,7 @@ else:
 
 updater = tg.Updater(TOKEN, workers=WORKERS)
 
+dispatcher = updater.dispatcher
 
 SUDO_USERS = list(SUDO_USERS)
 WHITELIST_USERS = list(WHITELIST_USERS)
