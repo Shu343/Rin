@@ -23,7 +23,7 @@ from src.modules.log_channel import loggable
  
 @user_admin_no_reply
 @loggable
-def kukirm(bot: Bot, update: Update, args: List[str]):
+def kukirm(bot: Bot, update: Update, args) -> str:
     query: Optional[CallbackQuery] = update.callback_query
     user: Optional[User] = update.effective_user
     match = re.match(r"rm_chat\((.+?)\)", query.data)
@@ -48,7 +48,7 @@ def kukirm(bot: Bot, update: Update, args: List[str]):
 
 @user_admin_no_reply
 @loggable
-def kukiadd(bot: Bot, update: Update, args: List[str]):
+def kukiadd(bot: Bot, update: Update, args) -> str:
     query: Optional[CallbackQuery] = update.callback_query
     user: Optional[User] = update.effective_user
     match = re.match(r"add_chat\((.+?)\)", query.data)
@@ -73,7 +73,7 @@ def kukiadd(bot: Bot, update: Update, args: List[str]):
 
 @user_admin
 @loggable
-def kuki(bot: Bot, update: Update, args: List[str]):
+def kuki(bot: Bot, update: Update, args) -> str:
     user = update.effective_user
     message = update.effective_message
     msg = "Choose an option"
