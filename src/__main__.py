@@ -49,9 +49,7 @@ My repository: [Shiki Ryougi](https://github.com/Shu343/Shiki-Rougi)
 To see helpable commands click on Help button
 """
 
-HELP_STRINGS = """
-*All Helpable commands are here:*
-"""
+HELP_STRINGS = "help_text"
 
 buttons = [
     [
