@@ -8,7 +8,7 @@ import os
 tracemoe = tracemoepy.tracemoe.TraceMoe()
 
 @run_async
-def whatanime(update, _,message):
+def whatanime(update, bot):
   reply = message.reply_to_message
   if reply and reply.media:
     path = reply.download()
