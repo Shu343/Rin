@@ -88,11 +88,11 @@ def kuki(update: Update, bot: Bot) -> str:
             text="Disable",
             callback_data="rm_chat({})")]])
     try:
-       update.effective_message.reply_text(
-           msg,
-           reply_markup=keyboard,
-           parse_mode=ParseMode.HTML,
-     )
+       message.reply_text(
+          msg,
+          reply_markup=keyboard,
+          parse_mode=ParseMode.HTML,
+       )
 
 @run_async
 def kuki_message(bot: Bot, message)
