@@ -743,7 +743,9 @@ def __chat_settings__(chat_id, user_id):
     )
 
 
-__help__ = "welcome_help"
+def get_help(chat):
+    return tl(chat, "greetings_help")
+
 
 __mod_name__ = "Greetings"
 
