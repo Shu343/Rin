@@ -107,7 +107,6 @@ def kuki_message(context, message):
         
 @run_async
 def chatbot(update, context):
-    message = update.effective_message
     chat_id = update.effective_chat.id
     bot = context.bot
     is_kuki = sql.is_kuki(chat_id)
