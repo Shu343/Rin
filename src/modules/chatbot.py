@@ -48,7 +48,7 @@ def kukirm(update: Update, context: CallbackContext) -> str:
 
 @user_admin_no_reply
 @loggable
-def kukiadd(update: Update, context: CallbackContext) -> str:
+def kukiadd((bot: Bot, update: Update, args: List[str]):
     query: Optional[CallbackQuery] = update.callback_query
     user: Optional[User] = update.effective_user
     match = re.match(r"add_chat\((.+?)\)", query.data)
@@ -73,7 +73,7 @@ def kukiadd(update: Update, context: CallbackContext) -> str:
 
 @user_admin
 @loggable
-def kuki(update: Update, context: CallbackContext):
+def kuki(bot: Bot, update: Update, args: List[str]):
     user = update.effective_user
     message = update.effective_message
     msg = "Choose an option"
@@ -91,7 +91,7 @@ def kuki(update: Update, context: CallbackContext):
         parse_mode=ParseMode.HTML,
     )
 
-def kuki_message(context: CallbackContext, message):
+def kuki_message(context, message):
     reply_message = message.reply_to_message
     if message.text.lower() == "kuki":
         return True
@@ -102,7 +102,7 @@ def kuki_message(context: CallbackContext, message):
         return False
         
 
-def chatbot(update: Update, context: CallbackContext):
+def chatbot(update, context):
     message = update.effective_message
     chat_id = update.effective_chat.id
     bot = context.bot
@@ -121,7 +121,7 @@ def chatbot(update: Update, context: CallbackContext):
         sleep(0.3)
         message.reply_text(kuki, timeout=60)
 
-def list_all_chats(update: Update, context: CallbackContext):
+def list_all_chats(update, context):
     chats = sql.get_all_kuki_chats()
     text = "<b>AI Enabled Chats</b>\n"
     for chat in chats:
