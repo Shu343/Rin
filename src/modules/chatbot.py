@@ -87,11 +87,12 @@ def kuki(update: Update, bot: Bot) -> str:
         InlineKeyboardButton(
             text="Disable",
             callback_data="rm_chat({})")]])
-    update.effective_message.reply_text(
-        msg,
-        reply_markup=keyboard,
-        parse_mode=ParseMode.HTML,
-    )
+    try:
+       update.effective_message.reply_text(
+           msg,
+           reply_markup=keyboard,
+           parse_mode=ParseMode.HTML,
+       )
 
 def kuki_message(context, message):
     reply_message = message.reply_to_message
