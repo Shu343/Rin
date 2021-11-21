@@ -17,7 +17,7 @@ from telegram.utils.helpers import mention_html, mention_markdown, escape_markdo
 
 from src.modules.helper_funcs.filters import CustomFilters
 from src.modules.helper_funcs.chat_status import user_admin, user_admin_no_reply
-from src import dispatcher, updater, SUPPORT_CHAT
+from src import dispatcher, updater, OWNER_ID
 from src.modules.log_channel import gloggable
 
  
