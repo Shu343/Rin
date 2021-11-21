@@ -93,8 +93,11 @@ def kuki(update: Update, bot: Bot) -> str:
           reply_markup=keyboard,
           parse_mode=ParseMode.HTML,
        )
+    except BadRequest as excp:
+         if excp.message == "Message can't be edited":
+             pass
+ 
 
-@run_async
 def kuki_message(bot: Bot, message)
     reply_message = message.reply_to_message
     if message.text.lower() == "kuki":
