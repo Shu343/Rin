@@ -456,12 +456,11 @@ def start_back(bot, update):
             query.message.edit_text(
                     PM_START_TEXT,
                     reply_markup=InlineKeyboardMarkup(buttons),
-                    parse_mode=ParseMode.MARKDOWN,
+                    parse_mode=ParseMode.HTML,
                     timeout=60,
-                    disable_web_page_preview=False,
             )  
     except BadRequest as excp:
-        if excp.message == "Message can't be deleted":
+        if excp.message == "Message can't be edited":
             pass
 
 @run_async
