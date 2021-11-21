@@ -64,12 +64,12 @@ RUN apt update && apt upgrade -y && \
 # Pypi package Repo upgrade
 RUN pip3 install --upgrade pip setuptools
 
-# Copy Python Requirements to /root/Rin
-RUN git clone https://github.com/Shu343/Rin /root/Rin
-WORKDIR /root/Rin
+# Copy Python Requirements to /root/Shiki-Ryougi
+RUN git clone https://github.com/Shiki-Ryougi/Shiki-Ryougi /root/Shiki-Ryougi
+WORKDIR /root/Shiki-Ryougi
 
-#Copy config file to /root/Rin/TohsakaRobot
-COPY ./TohsakaRobot/config.py ./TohsakaRobot/config.py* /root/Rin/TohsakaRobot/
+#Copy config file to /root/Shiki-Ryougi/src
+COPY ./src/config.py ./src/config.py* /root/Shiki-Ryougi/src/
 
 ENV PATH="/home/bot/bin:$PATH"
 
@@ -77,4 +77,4 @@ ENV PATH="/home/bot/bin:$PATH"
 RUN pip3 install --user -r requirements.txt
 
 # Starting Worker
-CMD ["python3","-m","TohsakaRobot"]
+CMD ["python3","-m","src"]
