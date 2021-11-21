@@ -3,7 +3,6 @@ import os
 import sys
 import spamwatch
 
-from pyrogram import Client, errors
 import telegram.ext as tg
 
 # enable logging
@@ -143,7 +142,6 @@ else:
     spamwtc = spamwatch.Client(SPAMWATCH)
 
 updater = tg.Updater(TOKEN, workers=WORKERS)
-pbot = Client("ShikiPyro", api_id=API_ID, api_hash=API_HASH, bot_token=TOKEN)
 dispatcher = updater.dispatcher
 
 SUDO_USERS = list(SUDO_USERS)
