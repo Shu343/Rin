@@ -9,7 +9,7 @@ from time import sleep
 from telegram import ParseMode
 from telegram import (CallbackQuery, Chat, MessageEntity, InlineKeyboardButton,
                       InlineKeyboardMarkup, Message, Update, Bot, User)
-from telegram.ext import (CallbackContext, CallbackQueryHandler, CommandHandler,
+from telegram.ext import (CallbackQueryHandler, CommandHandler,
                           DispatcherHandlerStop, Filters, MessageHandler,
                           run_async)
 from telegram.error import BadRequest, RetryAfter, Unauthorized
