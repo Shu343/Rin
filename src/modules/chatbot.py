@@ -94,7 +94,16 @@ def kuki(update: Update, bot: Bot) -> str:
             text="Disable",
             callback_data="rm_chat({})")]])
 
-    
+ def kuki_message(context, message):
+    reply_message = message.reply_to_message
+    if message.text.lower() == "kuki":
+        return True
+    if reply_message:
+        if reply_message.from_user.id == context.bot.get_me().id:
+            return True
+    else:
+        return False   
+
 @run_async
 def chatbot(update, context):
     chat_id = update.effective_chat.id
