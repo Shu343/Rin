@@ -78,7 +78,7 @@ def kukiadd(update, context) -> str:
 @run_async
 @loggable
 def kuki(update: Update, bot: Bot) -> str:
-    message = update.effective_message
+    message = update.effective_message()
     msg = "Choose an option"
     keyboard = InlineKeyboardMarkup([[
         InlineKeyboardButton(
