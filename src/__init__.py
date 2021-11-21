@@ -56,8 +56,6 @@ if ENV:
     WEBHOOK = bool(os.environ.get("WEBHOOK", False))
     URL = os.environ.get("URL", "")  # Does not contain token
     PORT = int(os.environ.get("PORT", 5000))
-    API_HASH = os.environ.get("API_HASH")
-    API_ID = os.environ.get("API_ID")
     CERT_PATH = os.environ.get("CERT_PATH")
 
     DB_URI = os.environ.get("DATABASE_URL")
@@ -110,8 +108,6 @@ else:
 
     WEBHOOK = Config.WEBHOOK
     URL = Config.URL
-    API_HASH = Config.API_HASH
-    API_ID = Config.API_ID
     PORT = Config.PORT
     CERT_PATH = Config.CERT_PATH
 
