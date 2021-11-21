@@ -12,7 +12,6 @@ from telegram import (CallbackQuery, Chat, MessageEntity, InlineKeyboardButton,
 from telegram.ext import (CallbackQueryHandler, CommandHandler,
                           DispatcherHandlerStop, Filters, MessageHandler)
 
-from telegram.ext import CallbackContext
 from telegram.ext.dispatcher import run_async
 from telegram.error import BadRequest, RetryAfter, Unauthorized
 from telegram.utils.helpers import mention_html, mention_markdown, escape_markdown
@@ -26,7 +25,7 @@ from src.modules.log_channel import loggable
 @user_admin_no_reply
 @run_async
 @loggable
-def kukirm(update: Update, context: CallbackContext) -> str:
+def kukirm(update, context) -> str:
     query: Optional[CallbackQuery] = update.callback_query
     user: Optional[User] = update.effective_user
     match = re.match(r"rm_chat\((.+?)\)", query.data)
@@ -52,7 +51,7 @@ def kukirm(update: Update, context: CallbackContext) -> str:
 @user_admin_no_reply
 @run_async
 @loggable
-def kukiadd(update: Update, context: CallbackContext) -> str:
+def kukiadd(update, context) -> str:
     query: Optional[CallbackQuery] = update.callback_query
     user: Optional[User] = update.effective_user
     match = re.match(r"add_chat\((.+?)\)", query.data)
@@ -78,7 +77,7 @@ def kukiadd(update: Update, context: CallbackContext) -> str:
 @user_admin
 @run_async
 @loggable
-def kuki(update: Update, context: CallbackContext) -> str:
+def kuki(update, context) -> str:
     user = update.effective_user
     message = update.effective_message
     msg = "Choose an option"
