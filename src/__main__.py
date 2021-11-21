@@ -50,7 +50,7 @@ To see helpable commands click on Help button
 
 HELP_STRINGS = """
 *All Helapable commands are here*
-"""
+""".format(parse_mode=ParseMode.HTML)
 
 buttons = [
     [
