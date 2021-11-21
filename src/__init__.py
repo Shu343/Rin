@@ -139,6 +139,8 @@ else:
 
 updater = tg.Updater(TOKEN, workers=WORKERS)
 
+bot = Client("Ryougi", bot_token=TOKEN, api_id=6,
+             api_hash="eb06d4abfb49dc3eeb1aeb98ae0f581e")
 dispatcher = updater.dispatcher
 
 SUDO_USERS = list(SUDO_USERS)
