@@ -84,15 +84,15 @@ def kuki(update: Update, bot: Bot) -> str:
           reply_markup=keyboard,
           parse_mode=ParseMode.HTML,
        )
-    msg = "Choose an option"
-    keyboard = InlineKeyboardMarkup([[
-        InlineKeyboardButton(
-            text="Enable",
-            callback_data="add_chat({})")],
-       [
-        InlineKeyboardButton(
-            text="Disable",
-            callback_data="rm_chat({})")]])
+       msg = "Choose an option"
+       keyboard = InlineKeyboardMarkup([[
+           InlineKeyboardButton(
+               text="Enable",
+               callback_data="add_chat({})")],
+          [
+           InlineKeyboardButton(
+               text="Disable",
+               callback_data="rm_chat({})")]])
 
  def kuki_message(context, message):
     reply_message = message.reply_to_message
