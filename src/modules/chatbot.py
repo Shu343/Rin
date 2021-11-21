@@ -23,6 +23,7 @@ from src.modules.log_channel import loggable
 
  
 @user_admin_no_reply
+@run_async
 @loggable
 def kukirm(bot: Bot, update: Update, args) -> str:
     query: Optional[CallbackQuery] = update.callback_query
@@ -48,6 +49,7 @@ def kukirm(bot: Bot, update: Update, args) -> str:
     return ""
 
 @user_admin_no_reply
+@run_async
 @loggable
 def kukiadd(bot: Bot, update: Update, args) -> str:
     query: Optional[CallbackQuery] = update.callback_query
@@ -73,6 +75,7 @@ def kukiadd(bot: Bot, update: Update, args) -> str:
     return ""
 
 @user_admin
+@run_async
 @loggable
 def kuki(bot: Bot, update: Update, args) -> str:
     user = update.effective_user
@@ -102,7 +105,7 @@ def kuki_message(context, message):
     else:
         return False
         
-
+@run_async
 def chatbot(update, context):
     message = update.effective_message
     chat_id = update.effective_chat.id
@@ -122,6 +125,7 @@ def chatbot(update, context):
         sleep(0.3)
         message.reply_text(kuki, timeout=60)
 
+@run_async
 def list_all_chats(update, context):
     chats = sql.get_all_kuki_chats()
     text = "<b>AI Enabled Chats</b>\n"
@@ -144,14 +148,14 @@ __help__ = """
 __mod_name__ = "ChatBot"
 
 
-CHATBOTK_HANDLER = CommandHandler("chatbot", kuki, run_async=True)
-ADD_CHAT_HANDLER = CallbackQueryHandler(kukiadd, pattern=r"add_chat", run_async=True)
-RM_CHAT_HANDLER = CallbackQueryHandler(kukirm, pattern=r"rm_chat", run_async=True)
+CHATBOTK_HANDLER = CommandHandler("chatbot", kuki)
+ADD_CHAT_HANDLER = CallbackQueryHandler(kukiadd, pattern=r"add_chat")
+RM_CHAT_HANDLER = CallbackQueryHandler(kukirm, pattern=r"rm_chat")
 CHATBOT_HANDLER = MessageHandler(
     Filters.text & (~Filters.regex(r"^#[^\s]+") & ~Filters.regex(r"^!")
-                    & ~Filters.regex(r"^\/")), chatbot, run_async=True)
+                    & ~Filters.regex(r"^\/")), chatbot)
 LIST_ALL_CHATS_HANDLER = CommandHandler(
-    "allchats", list_all_chats, filters=CustomFilters.dev_filter, run_async=True)
+    "allchats", list_all_chats, filters=CustomFilters.dev_filter)
 
 dispatcher.add_handler(ADD_CHAT_HANDLER)
 dispatcher.add_handler(CHATBOTK_HANDLER)
