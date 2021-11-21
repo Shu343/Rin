@@ -12,7 +12,6 @@ from src.modules.disable import DisableAbleCommandHandler
 from src.modules.helper_funcs.chat_status import user_admin_no_reply, user_admin
 
 from src.modules.sql import languages_sql as sql
-from src.modules.helper_funcs.alternate import send_message
 
 LOADED_LANGS_ID = []
 LANGS_TEXT = {}
