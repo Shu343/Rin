@@ -18,11 +18,11 @@ LANGS_TEXT = {}
 FUNC_LANG = {}
 
 for x in os.listdir('src/modules/langs'):
-	if os.path.isdir('emilia/modules/langs/'+x):
+	if os.path.isdir('src/modules/langs/'+x):
 		continue
 	x = x.replace('.py', '')
 	LOADED_LANGS_ID.append(x)
-	imported_langs = importlib.import_module("emilia.modules.langs." + x)
+	imported_langs = importlib.import_module("src.modules.langs." + x)
 	FUNC_LANG[x] = imported_langs
 	LANGS_TEXT[x] = imported_langs.__lang__
 
