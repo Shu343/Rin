@@ -77,7 +77,7 @@ def kukiadd(update, context) -> str:
 @user_admin
 @run_async
 @loggable
-def kuki(update, context) -> str:
+def kuki(update: Update, bot: Bot) -> str:
     message = update.effective_message
     msg = "Choose an option"
     keyboard = InlineKeyboardMarkup([[
