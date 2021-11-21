@@ -18,11 +18,11 @@ from telegram.utils.helpers import mention_html, mention_markdown, escape_markdo
 from src.modules.helper_funcs.filters import CustomFilters
 from src.modules.helper_funcs.chat_status import user_admin, user_admin_no_reply
 from src import dispatcher, updater, OWNER_ID
-from src.modules.log_channel import gloggable
+from src.modules.log_channel import loggable
 
  
 @user_admin_no_reply
-@gloggable
+@loggable
 def kukirm(update: Update, context: CallbackContext) -> str:
     query: Optional[CallbackQuery] = update.callback_query
     user: Optional[User] = update.effective_user
@@ -47,7 +47,7 @@ def kukirm(update: Update, context: CallbackContext) -> str:
     return ""
 
 @user_admin_no_reply
-@gloggable
+@loggable
 def kukiadd(update: Update, context: CallbackContext) -> str:
     query: Optional[CallbackQuery] = update.callback_query
     user: Optional[User] = update.effective_user
@@ -72,7 +72,7 @@ def kukiadd(update: Update, context: CallbackContext) -> str:
     return ""
 
 @user_admin
-@gloggable
+@loggable
 def kuki(update: Update, context: CallbackContext):
     user = update.effective_user
     message = update.effective_message
