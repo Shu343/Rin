@@ -78,7 +78,6 @@ def kukiadd(update, context) -> str:
 @run_async
 @loggable
 def kuki(update: Update, bot: Bot) -> str:
-    message = update.effective_message()
     msg = "Choose an option"
     keyboard = InlineKeyboardMarkup([[
         InlineKeyboardButton(
@@ -88,7 +87,7 @@ def kuki(update: Update, bot: Bot) -> str:
         InlineKeyboardButton(
             text="Disable",
             callback_data="rm_chat({})")]])
-    message.reply_text(
+    update.effective_message.reply_text(
         msg,
         reply_markup=keyboard,
         parse_mode=ParseMode.HTML,
