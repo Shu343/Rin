@@ -91,7 +91,7 @@ def kuki(update: Update, bot: Bot) -> str:
           [
            InlineKeyboardButton(
                text="Disable",
-               callback_data="rm_chat({})")]])
+               callback_data="rm_chat({})")]]
 
 
 
