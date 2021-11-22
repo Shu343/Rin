@@ -73,7 +73,8 @@ def kukiadd(update, context) -> str:
             )
 
     return ""
-
+@user_admin
+@gloggable
 def kuki(update, context):
     message = update.effective_message.reply_text(
         msg,
@@ -90,7 +91,15 @@ def kuki(update, context):
             text="Disable",
             callback_data="rm_chat({})")]])
 
-
+def kuki_message(context: CallbackContext, message):
+    reply_message = message.reply_to_message
+    if message.text.lower() == "kuki":
+        return True
+    if reply_message:
+        if reply_message.from_user.id == context.bot.get_me().id:
+            return True
+    else:
+        return False
 
 @run_async
 def chatbot(update, context):
