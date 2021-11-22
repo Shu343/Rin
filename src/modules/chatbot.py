@@ -74,7 +74,7 @@ def kukiadd(update, context) -> str:
 
     return ""
 @user_admin
-@gloggable
+@loggable
 def kuki(update, context):
     message = update.effective_message.reply_text(
         msg,
