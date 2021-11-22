@@ -91,7 +91,7 @@ def kuki(update, context):
             text="Disable",
             callback_data="rm_chat({})")]])
 
-def kuki_message(context: CallbackContext, message):
+def kuki_message(context, message):
     reply_message = message.reply_to_message
     if message.text.lower() == "kuki":
         return True
