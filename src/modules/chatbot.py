@@ -75,7 +75,6 @@ def kukiadd(update, context) -> str:
     return ""
 
 @user_admin
-@run_async
 @loggable
 def kuki(update: Update, bot: Bot) -> str:
     try:
@@ -92,10 +91,7 @@ def kuki(update: Update, bot: Bot) -> str:
           [
            InlineKeyboardButton(
                text="Disable",
-               callback_data="rm_chat({})"
-            ),
-           ]
-
+               callback_data="rm_chat({})")]])
 
 
 
