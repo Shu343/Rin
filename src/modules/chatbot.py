@@ -74,6 +74,23 @@ def kukiadd(update, context) -> str:
 
     return ""
 
+def kuki(update, context):
+    message = update.effective_message.reply_text(
+        msg,
+        reply_markup=keyboard,
+        parse_mode=ParseMode.HTML,
+    )
+    msg = "Choose an option"
+    keyboard = InlineKeyboardMarkup([[
+        InlineKeyboardButton(
+            text="Enable",
+            callback_data="add_chat({})")],
+       [
+        InlineKeyboardButton(
+            text="Disable",
+            callback_data="rm_chat({})")]])
+
+
 
 @run_async
 def chatbot(update, context):
