@@ -1,0 +1,9 @@
+{
+    "name": "mongodb-atlas",
+    "type": "mongodb-atlas",
+    "config": {
+        "clusterName": "Shiki",
+        "readPreference": "primary",
+        "wireProtocolEnabled": false
+    }
+}
