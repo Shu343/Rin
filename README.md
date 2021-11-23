@@ -21,7 +21,7 @@ OR
 
 For the link to the old repo containing all the commit history and authorships, <a href="https://github.com/rsktg/Phoenix.git">Click Here</A>
 
-<imgsrc = "https://telegra.ph/file/025c4b6e40213881b5620.mp4" alt ="Shiki">
+<img src = "https://telegra.ph/file/025c4b6e40213881b5620.mp4" alt ="Shiki">
 <H2 ALGIN =LEFT>Notice</H2><BR>
 new features will be added to this project, however occasional bug fixes will be released.
 hmm
