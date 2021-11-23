@@ -3,7 +3,7 @@
     "type": "mongodb-atlas",
     "config": {
         "clusterName": "Shiki",
-        "readPreference": "primary",
+        "readPreference": "primaryPreferred",
         "wireProtocolEnabled": false
     }
 }
