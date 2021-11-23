@@ -3,7 +3,7 @@
 
  modular telegram Python bot running on python3 with an sqlalchemy database.
 
-Originally a Marie fork, Shiki was created for personal use by [this person](https://t.me/Shu343). Feel free to add it to your groups though!
+Originally a Marie fork, Shiki was created for personal use by [this person](https://t.me/Its_Shu2). Feel free to add it to your groups though!
 
 <P ALIGN = CENTER>Can be found n telegram as <a href="https://t.me/Shiki_rbot/">Shiki</A></P>
 
