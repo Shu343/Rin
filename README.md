@@ -1,5 +1,5 @@
 <IMG SRC = "https://telegra.ph/file/d551b6a03367e1e704df6.jpg" ALT ="Shiki">
-<H2 ALIGN = LEFT>Rin Tohsaka</H2><BR>
+<H2 ALIGN = LEFT>Ryougi Shiki</H2><BR>
 
  modular telegram Python bot running on python3 with an sqlalchemy database.
 
@@ -21,7 +21,7 @@ OR
 
 For the link to the old repo containing all the commit history and authorships, <a href="https://github.com/rsktg/Phoenix.git">Click Here</A>
 
-<img src = "https://telegra.ph/file/025c4b6e40213881b5620.mp4" alt ="Shiki">
+<imgsrc = "https://telegra.ph/file/025c4b6e40213881b5620.mp4" alt ="Shiki">
 <H2 ALGIN =LEFT>Notice</H2><BR>
 new features will be added to this project, however occasional bug fixes will be released.
 hmm
