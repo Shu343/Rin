@@ -74,7 +74,7 @@ def kukiadd(update, context) -> str:
 
     return ""
 @user_admin
-@loggable
+@run_async
 def kuki(update, context):
     keyboard = InlineKeyboardMarkup([[
         InlineKeyboardButton(
