@@ -108,6 +108,10 @@ def chatbot(update, context):
             kuki = Kuki['reply']
             sleep(0.3)
             message.reply_text(kuki, timeout=60)
+    except BadRequest as excp:
+        if excp.message == "Message can't be edited":
+            pass
+ 
 
 @run_async
 def list_all_chats(update, context):
