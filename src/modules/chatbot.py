@@ -97,17 +97,17 @@ def kuki_message(context, message):
 
 @run_async
 def chatbot(update, context):
-try:
-    if message.text and not message.document:
-        if not kuki_message(context, message):
-            return
-        Message = message.text
-        bot.send_chat_action(chat_id, action="typing")
-        kukiurl = requests.get('https://www.kukiapi.xyz/api/apikey=KUKIg76Fg4EIo/Mmm/@Souka/message='+Message)
-        Kuki = json.loads(kukiurl.text)
-        kuki = Kuki['reply']
-        sleep(0.3)
-        message.reply_text(kuki, timeout=60)
+    try:
+        if message.text and not message.document:
+            if not kuki_message(context, message):
+                return
+            Message = message.text
+            bot.send_chat_action(chat_id, action="typing")
+            kukiurl = requests.get('https://www.kukiapi.xyz/api/apikey=KUKIg76Fg4EIo/Mmm/@Souka/message='+Message)
+            Kuki = json.loads(kukiurl.text)
+            kuki = Kuki['reply']
+            sleep(0.3)
+            message.reply_text(kuki, timeout=60)
 
 @run_async
 def list_all_chats(update, context):
