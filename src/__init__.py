@@ -114,7 +114,7 @@ else:
     PORT = Config.PORT
     CERT_PATH = Config.CERT_PATH
     API_ID = Config.API_ID
-    API_HASH = Cofing.API_HASH
+    API_HASH = Confing.API_HASH
 
     DB_URI = Config.SQLALCHEMY_DATABASE_URI
     DONATION_LINK = Config.DONATION_LINK
