@@ -1,5 +1,7 @@
 from telegram import Update
 from telegram.ext import Updater, CommandHandler, CallbackContext
+from src import dispatcher
+
 
 def alarm(context: CallbackContext) -> None:
     """Send the alarm message."""
