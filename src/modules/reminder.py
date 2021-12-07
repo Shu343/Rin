@@ -1,6 +1,6 @@
 from telegram import Update
 from telegram.ext import Updater, CommandHandler
-from telegram.ext import CallbackContext
+from telegram.ext.CallbackContext import CallbackContext
 from src import dispatcher
 
 
