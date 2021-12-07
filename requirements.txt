@@ -21,5 +21,4 @@ coffeehouse
 tswift
 spamwatch
 nekos.py
-git+https://github.com/python-telegram-bot/ptbcontrib.git
 gitpython
