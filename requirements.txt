@@ -19,6 +19,7 @@ wikipedia
 jikanpy
 coffeehouse
 tswift
+tldextract
 spamwatch
 nekos.py
 beautifulsoup4==4.6.3
