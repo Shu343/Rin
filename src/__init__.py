@@ -4,7 +4,7 @@ import sys
 import spamwatch
 
 import telegram.ext as tg
-from telethon import TelegramClient
+
 
 # enable logging
 logging.basicConfig(
@@ -143,7 +143,6 @@ else:
     spamwtc = spamwatch.Client(SPAMWATCH)
 
 updater = tg.Updater(TOKEN, workers=WORKERS)                 
-telethn = TelegramClient("Ryougi", API_ID, API_HASH)
 dispatcher = updater.dispatcher
 
 SUDO_USERS = list(SUDO_USERS)
