@@ -158,23 +158,6 @@ URL_DELETE_HANDLER = MessageHandler(
     edited_updates=True)
 
 
-__mod_name__ = "Domain Blacklists"
-
-__help__ = """
-Domain blacklisting is used to stop certain domains from being mentioned in a group, Any time an url on that domain is mentioned, /
-the message will immediately be deleted.
-
-*NOTE:* domain blacklisting do not affect group admins.
-
-- /geturl: View the current blacklisted urls
-
-*Admin only:*
-
-- /addurl <urls>: Add a domain to the blacklist. The bot will automatically parse the url.
-- /delurl <urls>: Remove urls from the blacklist
-
-"""
-
 dispatcher.add_handler(URL_BLACKLIST_HANDLER)
 dispatcher.add_handler(ADD_URL_BLACKLIST_HANDLER)
 dispatcher.add_handler(RM_BLACKLIST_URL_HANDLER)
