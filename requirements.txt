@@ -21,3 +21,4 @@ coffeehouse
 tswift
 spamwatch
 nekos.py
+beautifulsoup4==4.6.3
