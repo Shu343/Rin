@@ -21,7 +21,7 @@ class Config(object):
     OWNER_USERNAME = "Its_shu3"
 
     # RECOMMENDED
-    SQLALCHEMY_DATABASE_URI = "postgres://ytywfwsc:YR8ft0tUMwx-NuIX9Z1DL1IWdSPwvLH-@castor.db.elephantsql.com/ytywfwsc"   #needed for any database modules
+    SQLALCHEMY_DATABASE_URI = "postgres://postgres:YR8ft0tUMwx-NuIX9Z1DL1IWdSPwvLH-@castor.db.elephantsql.com/ytywfwsc"   #needed for any database modules
     MESSAGE_DUMP = None  # needed to make sure 'save from' messages persist
     LOAD = []
     # sed has been disabled after the discovery that certain long-running sed commands maxed out cpu usage
