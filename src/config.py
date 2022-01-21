@@ -14,7 +14,7 @@ class Config(object):
     LOGGER = True
 
     # REQUIRED
-    API_KEY = '5061118074:AAE9TJj2EZFqbFxVi6_H7pXbLGP1haPv6h4' 
+    API_KEY = '5164091383:AAEgA7Euk646V1521-WkDEW1sQ2gdXNgH4Y' 
     API_ID = "9124164"
     API_HASH = "e922c979399634e27463ae08f06bc84a"
     OWNER_ID = "1725431624"  # If you dont know, run the bot and do /id in your private chat with it
