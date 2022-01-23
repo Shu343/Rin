@@ -1,5 +1,5 @@
 from sqlalchemy import create_engine
-from src import DB_URL
+from src import DB_URI
 class SomeTable(Base):
     """
     Class, that represents SomeTable
