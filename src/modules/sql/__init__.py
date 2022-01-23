@@ -1,13 +1,13 @@
 from sqlalchemy import create_engine
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker, scoped_session
-from src import CONFIG
+from src import DB_URI
 import logging
 
 
 def start() -> scoped_session:
     try:
-        engine = create_engine(CONFIG.database_url, client_encoding="utf8")
+        engine = create_engine(DR_URI, client_encoding="utf8")
         BASE.metadata.bind = engine
         BASE.metadata.create_all(engine)
         return scoped_session(sessionmaker(bind=engine, autoflush=False))
