@@ -21,7 +21,7 @@ class Config(object):
     OWNER_USERNAME = "Its_shu3"
 
     # RECOMMENDED
-    SQLALCHEMY_DATABASE_URI = "postgresql://postgres:28DWDBK8FO5vAqgiCrLM@containers-us-west-15.railway.app:6319/railway"   #needed for any database modules
+    SQLALCHEMY_DATABASE_URI = "postgresql://postgres:pM8O5BCu3ZuV2mBDDxP6@containers-us-west-27.railway.app:5971/railway"   #needed for any database modules
     MESSAGE_DUMP = None  # needed to make sure 'save from' messages persist
     LOAD = []
     # sed has been disabled after the discovery that certain long-running sed commands maxed out cpu usage
