@@ -19,7 +19,7 @@ OR
 • MrYacha, Ayra Hikari and Mizukito Akito for Federations.<BR>
 • 1maverick1 for welcome mutes.<BR>
 
-For the link to the old repo containing all the commit history and authorships, <a href="https://github.com/rsktg/Phoenix.git">Click Here</A>
+Fo the link to the old repo containing all the commit history and authorships, <a href="https://github.com/rsktg/Phoenix.git">Click Here</A>
 
 <img src = "https://telegra.ph/file/025c4b6e40213881b5620.mp4" alt ="Shiki">
 <H2 ALGIN =LEFT>Notice</H2><BR>
