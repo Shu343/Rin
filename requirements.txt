@@ -14,12 +14,10 @@ googletrans
 psutil
 bleach
 markdown2
-speedtest-cli
 wikipedia
 jikanpy
 coffeehouse
 tswift
 tldextract
 spamwatch
-nekos.py
 beautifulsoup4==4.6.3
